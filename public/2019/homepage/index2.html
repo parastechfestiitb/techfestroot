@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Techfest</title>
+    <script type="text/javascript">
+        if (screen.width <= 992)
+        {
+            document.location = "index.html";
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0cb1d71f32.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+        body{
+            overflow-x: hidden;
+            font-family: 'Lato', sans-serif;
+
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        ::-webkit-scrollbar-button {
+            width: 0px;
+        }
+        ::-webkit-scrollbar-track-piece {
+            width: 0px;
+        }
+        ::-webkit-scrollbar-thumb {
+            width: 0px;
+        }​
+        @-webkit-keyframes rotate {
+
+            to {
+                -webkit-transform: rotateZ(359deg);
+            }
+        }
+
+        .mandala{
+            z-index: 0;
+            top: calc(50vh - 18.5vw);
+            left: calc(31.5%);
+            width: 37vw;
+        }
+
+
+        .mandala_1 {
+            position: absolute;
+            z-index: 6;
+            animation: rotate 60s infinite linear;
+            animation-fill-mode: forwards;
+
+        }
+        .mandala_2 {
+            position: absolute;
+            z-index: 5;
+            animation: rotate reverse 60s infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .mandala_3 {
+            position: absolute;
+            z-index: 4;
+            animation: rotate  60s infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .mandala_4 {
+            position: absolute;
+            opacity: 0.9;
+            z-index: 3;
+            animation: rotate reverse 60s infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .mandala_5 {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 1;
+            animation: rotate reverse 60s infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .mandala_6 {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 7;
+            animation: rotate  60s infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .black_blurr {
+            position: absolute;
+            top: calc(50vh - 30.65vw);
+            left: calc(19.35vw);
+            width: 61.3vw;
+            opacity: 0.5;
+            z-index: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .header {
+            width: 100%;
+            position: fixed;
+            z-index: 8;
+        }
+        .footer {
+            bottom: 0px;
+            width: 100%;
+            position: fixed;
+            z-index: 8;
+        }
+        .left_eye {
+            position: absolute;
+            top: 56px;
+            width: 30%;
+            left: 9.9%;
+        }
+        .right_eye {
+            position: absolute;
+            top: 56px;
+            width: 30%;
+            right: 9.9%;
+        }
+        .box{
+            position:fixed;
+            z-index: 20;
+
+        }
+        .links {
+            font-size: 2.5vh;
+            color: white;
+        }
+
+        .topright{
+            top:0px;
+            right:0px;
+            width: 33%;
+            text-align: right;
+            padding-right: 2%;
+        }
+        .topright_links {
+            padding-top: 2.5%;
+        }
+        .topleft{
+            top:0px;
+            left:0px;
+            width: 33%;
+            text-align: left;
+            padding-left: 2%;
+        }
+        .topleft_links{
+            padding-top: 2.5%;
+        }
+        .bottomright{
+            bottom:0px;
+            right:0px;
+            height: 10%;
+            width: 30%;
+        }
+        .bottomleft{
+            bottom:0px;
+            left:0px;
+            height: 10%;
+            width: 30%;
+            padding-left: 2%;
+
+        }
+        .bottomleft_link{
+            text-align: left;
+        }
+
+        .bottomcentre{
+            left: calc(50% - 30vh);
+            bottom:5px;
+            width: 60vh;
+            color: white;
+        }
+        .topcentre{
+            top: 1.5%;
+            left: 45%;
+            max-width: 10%;
+            max-height: 50px;
+
+        }
+        .logo{
+            max-width: 100%;
+        }
+
+
+
+        .pos{
+            left:10%;
+            bottom:-50px;
+            width:40px;
+            height:80px;
+            z-index:100;
+            background-size:60px;
+        }
+
+        .page1{
+            overflow-x: hidden;
+        }
+        .page2{
+            position: absolute;
+            top: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        .inner_element{
+            height: 100%;
+        }
+        .guine{
+            z-index: 10;
+            height: -webkit-fill-available;
+            padding-left: 5%;
+        }
+        .guine_box{
+            padding-top: 20%;
+            padding-bottom: 23%;
+            text-align: right;
+
+        }
+        .center_letter_box{
+            min-height: 100vh;
+            max-height: 100vh;
+            padding-top: 26%;
+            padding-bottom: 20%;
+
+        }
+        .letter{
+            /*width: 100%;*/
+            padding: 2%;
+        }
+        .text_box{
+            padding-top: 20%;
+            padding-right: 5%;
+        }
+        .text{
+            padding: 5% ;
+            border-radius: 20px;
+            background-color: grey;
+            font-size: 2.4vh;
+        }
+
+        .bg_img{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+
+        }
+        i {
+            padding: 5px;
+            size: 27px;
+        }
+
+
+    </style>
+    <style>
+
+        #page12:hover #mandala_1{
+            transition: 15s;
+        }
+        #page12:hover #mandala_2{
+            transition: 15s;
+        }
+        #page12:hover #mandala_3{
+            transition: 15s;
+        }
+        #page12:hover #mandala_4{
+            transition: 15s;
+        }
+        #page12:hover #mandala_5{
+            transition: 15s;
+        }
+        #page12:hover #mandala_6{
+
+        }
+
+
+
+
+
+
+
+        #page1:hover #right_eye {
+            animation: bounce_right 2s;
+            animation-iteration-count: infinite;
+        }
+        #page1:hover #left_eye {
+            animation: bounce_left 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce_right {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            10% {transform: translateX(30px);}
+            50% {transform: translateX(20px);}
+        }
+        @keyframes bounce_left {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            10% {transform: translateX(-30px);}
+            50% {transform: translateX(-20px);}
+        }
+    </style>
+    <style>
+        .zoom {
+            transition: 0.7s;
+        }
+        .zoom:hover {
+            cursor: pointer!important;
+
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        .mandala_6 {
+            transition: 0.7s;
+        }
+        .mandala_6:hover {
+            cursor: pointer!important;
+
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+
+            animation: 10s rotate infinite linear;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<img class="bg_img" src="images/Background_1.png" alt="">
+<img class="header" src="images/Header.png" alt="" >
+<img class="footer" src="images/Footer.png" alt="" >
+
+<div>
+
+    <div class="box topleft">
+        <div class="row">
+            <div class="col-md-3 topleft_links" id=Links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Home</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Initiative</a><br>
+
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Summit</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Mun</a><br>
+
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Lectures</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Exhi</a><br>
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Workshops</a><br>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="box topright">
+        <div class="row" >
+            <div class="col-md-2 topright_links" style="padding-right: 2.5%;">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Ideate</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" ></a><br>
+
+            </div>
+            <div class="col-md-4 topright_links" id="Links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Competitions</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Esports</a><br>
+
+            </div>
+            <div class="col-md-3 topright_links" style="padding-left: 0px;">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Full-Throttle</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Robowars</a><br>
+
+            </div>
+            <div class="col-md-3 topright_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Technoholix</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Ozone</a><br>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="box bottomright">
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="box bottomleft">
+        <div class="row ">
+            <div class="col-md-4 bottomleft_link">
+                <a class="links " href="https://techfest.org/2019/lectures/" >About Us</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Contact Us</a><br>
+
+            </div>
+            <div class="col-md-4 bottomleft_link " style="">
+                <a class="links " href="https://techfest.org/2019/lectures/" >Hospitality</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Legals</a><br>
+
+            </div>
+            <div class="col-md-4 bottomleft_link" style="padding-left: 0px;">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Media</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Sponsor</a><br>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="box bottomcentre" >
+        <div class="row">
+            <div class="col-sm-12 " style="text-align: center; font-size: 3vh">
+
+                <a style="color: white" href="https://www.facebook.com/iitbombaytechfest"><i class="fab fa-facebook-f"></i></a>
+                <a style="color: white" href=""><i class="fab fa-instagram"></i></a>
+                <a style="color: white" href=""><i class="fab fa-twitter"></i></a>
+                <a style="color: white" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a style="color: white" href=""><i class="fab fa-pinterest-p"></i></a>
+                <a style="color: white" href=""><i class="fab fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="box topcentre">
+        <img class="logo" src="logo_edit.png" alt="">
+    </div>
+</div>
+<div class="main">
+    <section >
+        <div id="page1" class="page1">
+            <div id="page11" class="page11">
+
+
+
+            </div>
+            <div id="page12" class="page12">
+                <img id="mandala_1" class="mandala mandala_1" src="images/mandala_1.png" >
+                <img id="mandala_2" class="mandala mandala_2" src="images/mandala_2.png" >
+                <img id="mandala_3" class="mandala mandala_3" src="images/mandala_3.png" >
+                <img id="mandala_4" class="mandala mandala_4" src="images/mandala_4.png" >
+                <img id="mandala_5" class="mandala mandala_5" src="images/mandala_5.png" >
+                <img id="mandala_6" class="mandala mandala_6" src="images/mandala_6.png" >
+                <img id="black_blurr" class="mandala black_blurr" src="/2019/homepage/images/Background_Blur.png" alt="">
+
+                <img id="left_eye" class="left_eye" src="images/Eye_Left.png" alt="">
+                <img id="right_eye" class="right_eye" src="images/Eye_Right.png" alt="">
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section>
+        <div class="row page2">
+            <div class="col-md-4">
+                <div class="guine_box" style="z-index: 100">
+                    <img class="guine zoom" src="/2019/homepage/images/gunness.jpg" alt="" style="z-index: 100">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="center_letter_box">
+                    <img class=" zoom" src="images/letter.png" alt="" style="width: 70%;  margin: auto;" >
+                    <img class=" zoom" src="images/apj.png" alt="" style="width: 87%;padding-top: 4%;">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text_box">
+                    <div class="text zoom">
+                        Techfest provides a platform for one and all to witness one of the most beautiful and groundbreaking amalgamations of science and technology with pure delight and enthusiasm. With a display of motivating orations, state of the art technology, cut-throat competitions and breathtaking performances for its audience, Techfest for the past 21 years has served to be the ideal destination for the millennials to learn, create and experience the beauty of technology.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Techfest Registration</title>
+      <!-- Meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content="Summer Camp Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+         />
+      <script>
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+      </script>
+      <!-- Meta tags -->
+      <!-- Calendar -->
+      <link rel="stylesheet" href="css/jquery-ui.css" />
+      <!-- //Calendar -->
+      <!--stylesheets-->
+      <link href="/2019/registration/css/style.css" rel='stylesheet' type='text/css' media="all">
+      <!--//style sheet end here-->
+      <!-- Google fonts here-->
+      <!--//Google fonts here-->
+   </head>
+   <body>
+      <h1 class="header-w3ls">Registration Form</h1>
+      <!-- multistep form -->
+      <div class="main-bothside">
+         <form action="/19/competitions/details_form" method="post">
+            {{csrf_field()}}
+
+            <!--            <div class="main-title">-->
+<!--               <h2> Parents/Guardian Details</h2>-->
+<!--            </div>-->
+            <div class="form-group">
+               <div class="form-grid-w3ls">
+                  <input type="text" class="form-control" name="name"  placeholder="Name" value="{{$current_user_data->name}}" required="">
+               </div>
+               <div class="form-grid-w3ls">
+                  <input type="text" class="form-control" name="email" value="{{$current_user_data->email}}" placeholder="Email" required="">
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="form-grid-w3ls">
+                  <input type="email" class="form-control" name="number" value="{{$current_user_data->number}}" placeholder="Phone Number" required="">
+               </div>
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" name="institute_name" placeholder="Institute Name" required="">-->
+<!--               </div>-->
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="text" name="institute_name" value="{{$current_user_data->college}}" placeholder="Institute Name" required="">
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="text" name="institute_address" placeholder="Institute Address" required="">
+               </div>
+               <div class="form-mid-w3ls">
+                  <select name="year_of_study" class="form-control buttom"  value="{{$current_user_data->year}}">
+                     <option value="">Year of study</option>
+                     <option value="1">First Year</option>
+                     <option value="2">Second Year</option>
+                     <option value="3">Third Year</option>
+                     <option value="4">Fourth Year</option>
+                     <option value="5">Fifth Year</option>
+                     <option value="8">8th Standard</option>
+                     <option value="9">9th Standard</option>
+                     <option value="10">10th Standard</option>
+                     <option value="11">11th Standard</option>
+                     <option value="12">12th Standard</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="text" name="residential_address" value="{{$current_user_data->address}}" placeholder="Residential Address" required="">
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="text" name="residential_pincode" value="{{$current_user_data->pincode}}" placeholder="Residential Pincode" required="">
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="text" dirname="country" name="country" placeholder="Country" required="">
+               </div>
+            </div>
+            <div >
+               <input type="hidden" name="url" value="{{url()->current()}}">
+            </div>
+
+            <input type="submit" value="Submit">
+         </form>
+      </div>
+
+
+   </body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Techfest</title>
+    <script type="text/javascript">
+        if (screen.width <= 992)
+        {
+            document.location = "index.html";
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0cb1d71f32.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+        body{
+            overflow-x: hidden;
+            font-family: 'Lato', sans-serif;
+        }
+        @-webkit-keyframes spin {
+            from {
+                -webkit-transform: rotateZ(0deg);
+            }
+            to {
+                -webkit-transform: rotateZ(359deg);
+            }
+        }
+
+        .mandala{
+            z-index: 0;
+            top: 63px;
+            left: calc(31.5%);
+            width: 37%;
+        }
+
+
+        .mandala_1 {
+            position: absolute;
+            z-index: 6;
+            animation: spin 20s infinite linear;
+        }
+        .mandala_2 {
+            position: absolute;
+            z-index: 5;
+            animation: spin reverse 20s infinite linear;
+        }
+        .mandala_3 {
+            position: absolute;
+            z-index: 4;
+            animation: spin  20s infinite linear;
+        }
+        .mandala_4 {
+            position: absolute;
+            opacity: 0.9;
+            z-index: 3;
+            animation: spin reverse 20s infinite linear;
+        }
+        .mandala_5 {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 1;
+            animation: spin reverse 20s infinite linear;
+        }
+        .mandala_6 {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 1;
+            animation: spin  20s infinite linear;
+        }
+        .mandala_black {
+            top: -13.3%;
+            position: absolute;
+            left: 19.6%;
+            width: 61.3%;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .mandala_7 {
+            position: absolute;
+            opacity: 0.5;
+            top: -10    %;
+            left: 15%;
+            width: 70%;
+        }
+        .mandala_8 {
+            position: absolute;
+            opacity: 0.5;
+        }
+        .mandala_9 {
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .header {
+            width: 100%;
+            position: fixed;
+            z-index: 7;
+        }
+        .footer {
+            bottom: 0px;
+            width: 100%;
+            position: fixed;
+            z-index: 7;
+        }
+        .left_eye {
+            position: absolute;
+            top: 8.6%;
+            width: 30%;
+            left: 9.9%;
+        }
+        .right_eye {
+            position: absolute;
+            top: 8.6%;
+            width: 30%;
+            right: 9.9%;
+        }
+        .box{
+            position:fixed;
+            z-index: 20;
+
+        }
+        .links {
+            font-size: 2.5vh;
+            color: white;
+        }
+
+        .topright{
+            top:0px;
+            right:0px;
+            width: 33%;
+            text-align: right;
+            padding-right: 2%;
+        }
+        .topright_links {
+            padding-top: 2.5%;
+        }
+        .topleft{
+            top:0px;
+            left:0px;
+            width: 33%;
+            text-align: left;
+            padding-left: 2%;
+        }
+        .topleft_links{
+            padding-top: 2.5%;
+        }
+        .bottomright{
+            bottom:0px;
+            right:0px;
+            height: 10%;
+            width: 30%;
+        }
+        .bottomleft{
+            bottom:0px;
+            left:0px;
+            height: 10%;
+            width: 30%;
+            padding-left: 2%;
+
+        }
+        .bottomleft_link{
+            text-align: left;
+        }
+
+        .bottomcentre{
+            left: calc(50% - 30vh);
+            bottom:5px;
+            width: 60vh;
+            color: white;
+        }
+        .topcentre{
+            top: 1.5%;
+            left: 45%;
+            max-width: 10%;
+            max-height: 50px;
+
+        }
+        .logo{
+            max-width: 100%;
+        }
+
+
+
+        .pos{
+            left:10%;
+            bottom:-50px;
+            width:40px;
+            height:80px;
+            z-index:100;
+            background-size:60px;
+        }
+
+        .page1{
+            overflow-x: hidden;
+        }
+        .page2{
+            position: absolute;
+            top: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        .inner_element{
+            height: 100%;
+        }
+        .guine{
+            z-index: 10;
+            height: -webkit-fill-available;
+            padding-left: 5%;
+        }
+        .guine_box{
+            padding-top: 20%;
+            padding-bottom: 23%;
+
+        }
+        .left_box{
+            padding-top: 20%;
+        }
+        .letter{
+            width: 100%;
+            padding: 2%;
+        }
+        .text_box{
+            padding-top: 20%;
+            padding-right: 5%;
+        }
+        .text{
+            padding: 5% ;
+            border-radius: 20px;
+            background-color: grey;
+            font-size: 2.4vh;
+        }
+
+        .bg_img{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+
+        }
+        i {
+            padding: 5px;
+            size: 27px;
+        }
+
+
+    </style>
+    <style>
+
+
+        #page12:hover #mandala_1{
+            animation: spin 5s reverse infinite linear;
+        }
+        #page12:hover #mandala_2{
+            animation: spin 5s  infinite linear;
+        }
+        #page12:hover #mandala_3{
+            animation: spin 5s reverse infinite linear;
+        }
+        #page12:hover #mandala_4{
+            animation: spin 5s infinite linear;
+        }
+        #page12:hover #mandala_5{
+            animation: spin 5s reverse infinite linear;
+        }
+        #page12:hover #mandala_6{
+            animation: spin 5s infinite linear;
+        }
+
+
+
+
+        #page1:hover #right_eye {
+            animation: bounce_right 2s;
+            animation-iteration-count: infinite;
+        }
+        #page1:hover #left_eye {
+            animation: bounce_left 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce_right {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            10% {transform: translateX(30px);}
+            50% {transform: translateX(20px);}
+        }
+        @keyframes bounce_left {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            10% {transform: translateX(-30px);}
+            50% {transform: translateX(-20px);}
+        }
+    </style>
+
+
+</head>
+<body>
+
+<img class="bg_img" src="images/Background.png" alt="">
+<img class="header" src="images/Header.png" alt="" >
+<img class="footer" src="images/Footer.png" alt="" >
+
+<div>
+
+    <div class="box topleft">
+        <div class="row">
+            <div class="col-md-3 topleft_links" id=Links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Home</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Initiative</a><br>
+
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Summit</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Mun</a><br>
+
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Lectures</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Exhi</a><br>
+            </div>
+            <div class="col-md-3 topleft_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Workshops</a><br>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="box topright">
+        <div class="row" >
+            <div class="col-md-3 topright_links" style="padding-right: 2.5%;">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Ideate</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" ></a><br>
+
+            </div>
+            <div class="col-md-3 topright_links" id="Links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Competitions</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Esports</a><br>
+
+            </div>
+            <div class="col-md-3 topright_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >IFT</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Robowars</a><br>
+
+            </div>
+            <div class="col-md-3 topright_links">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Technoholix</a><br>
+                <a class="links" href="https://techfest.org/2019/lectures/" >Ozone</a><br>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="box bottomright">
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="box bottomleft">
+        <div class="row ">
+            <div class="col-md-4 bottomleft_link">
+                <a class="links " href="https://techfest.org/2019/lectures/" >About Us</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Contact Us</a><br>
+
+            </div>
+            <div class="col-md-4 bottomleft_link " style="">
+                <a class="links " href="https://techfest.org/2019/lectures/" >Hospitality</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Legals</a><br>
+
+            </div>
+            <div class="col-md-4 bottomleft_link" style="padding-left: 0px;">
+                <a class="links" href="https://techfest.org/2019/lectures/" >Media</a><br>
+                <a class="links " href="https://techfest.org/2019/lectures/" >Sponsor</a><br>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="box bottomcentre" >
+        <div class="row">
+            <div class="col-sm-12 " style="text-align: center; font-size: 3vh">
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+
+            </div>
+        </div>
+    </div>
+    <div class="box topcentre">
+        <img class="logo" src="logo_edit.png" alt="">
+    </div>
+</div>
+<div class="main">
+    <section>
+
+
+            <div id="page12" class="page12">
+                <img id="mandala_1" class="mandala mandala_1" src="images/mandala_1.png" >
+                <img id="mandala_2" class="mandala mandala_2" src="images/mandala_2.png" >
+                <img id="mandala_3" class="mandala mandala_3" src="images/mandala_3.png" >
+                <img id="mandala_4" class="mandala mandala_4" src="images/mandala_4.png" >
+                <img id="mandala_5" class="mandala mandala_5" src="images/mandala_5.png" >
+                <img id="mandala_6" class="mandala mandala_6" src="images/mandala_6.png" >
+                <img id="mandala_black" class="mandala mandala_black" src="images/Background_Blur.png" >
+                <!--                <img id="mandala_7" class="mandala_7" src="images/mandala_4.png" >-->
+                <!--                <img id="mandala_8" class="mandala_8" src="images/mandala_5.png" >-->
+                <!--                <img id="mandala_9" class="mandala_9" src="images/mandala_6.png" >-->
+                <!---->
+            </div>
+    </section>
+
+    <section id="page">
+        <blockquote style="font-size: 2.3em; width: 30%; margin-top: 17%;position: absolute;">Hey,Testing!</blockquote>
+    </section>
+
+    <section>
+        <div class="row page2">
+            <div class="col-md-4">
+                <div class="guine_box" style="z-index: 100">
+                    <img class="guine" src="/2019/homepage/images/gunness.jpg" alt="" style="z-index: 100">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="left_box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <img class="letter" src="images/letter.png" alt="">
+
+                            </div>
+                            <div>
+                                <img class="letter" src="images/1.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <img class="letter" src="images/1.png" alt="">
+                            </div>
+                            <div>
+                                <img class="letter" src="images/1.png" alt="">
+                            </div>
+                            <div>
+                                <img class="letter" src="images/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text_box">
+                    <div class="text">
+                        Techfest provides a platform for one and all to witness one of the most beautiful and groundbreaking amalgamations of science and technology with pure delight and enthusiasm. With a display of motivating orations, state of the art technology, cut-throat competitions and breathtaking performances for its audience, Techfest for the past 21 years has served to be the ideal destination for the millennials to learn, create and experience the beauty of technology.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script>
+    let t1=new TimelineMax({onUpdate:updatePercentage});
+    const controller= new ScrollMagic.Controller;
+    tl.from('blockquote', .5, {x:200, opacity: 0});
+    const scene = new ScrollMagic.Scene({
+        triggerElement: ".page",
+        triggerHook:"onLeave",
+        duration:"100%"
+    })
+        .setPin(".page")
+            .setTween(t1)
+            .addTo(controller);
+
+    function updatePercentage() {
+        //percent.innerHTML = (tl.progress() *100 ).toFixed();
+        tl.progress();
+        console.log(tl.progress());
+    }
+</script>
+
+
+
+
+</body>
+</html>

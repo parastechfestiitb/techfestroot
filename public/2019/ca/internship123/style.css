@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan|Dancing+Script:400,700|Roboto&display=swap");
+
+body {
+  /* overflow: hidden; */
+  margin: 0;
+  color: white !important;
+  background-image: url(techy.png);
+  background-size: 100%;
+}
+
+.first {
+  margin: 0;
+  background-image: url(techy.png);
+  background-size: 100%;
+}
+
+.heading {
+  display: table;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.heading h3,
+.heading h2 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 1em 0 0 0 !important;
+}
+.heading h1 {
+  font-size: 80px;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: rgb(217, 217, 248);
+}
+.department {
+  color: white;
+}
+.imagelink img,
+.backbutton img {
+  width: 2em;
+  height: 2em;
+  /* margin: auto; */
+  /* display: block; */
+}
+.backbutton img {
+  width: 1.7em;
+  height: 1.7em;
+}
+.backbutton {
+  padding: 1em 2.5em 2.5em 1em !important;
+  height: 6em;
+  width: 3em;
+  display: none;
+}
+.imagelink {
+  display: block;
+}
+.imagelink,
+.backbutton {
+  margin: 2em 0 0 2em;
+  padding: 1em 1em 1.3em 1em;
+  /* vertical-align: middle; */
+  position: relative;
+  top: 2em;
+  box-shadow: 0px 0px 10px 5px white inset;
+  border-radius: 100%;
+  height: 4em;
+  width: 4em;
+}
+
+.link {
+  color: white;
+  border: 1px solid whitesmoke;
+  padding: 20px 40px 20px 40px;
+  box-shadow: inset 0 0 10px #bbb7b7;
+}
+
+.eachdept {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  position: relative;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 2em auto;
+  overflow: hidden;
+  height: 12.5em;
+  width: 22em;
+}
+.deptoverlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em 2em 2em 2em;
+  border-radius: 6px;
+  display: table;
+  text-align: center;
+  position: relative;
+  z-index: 9999;
+}
+.deptoverlay h5 {
+  position: relative;
+  margin-top: 6.5em;
+  transition: all 0.4s;
+  z-index: 9999;
+}
+.deptoverlay p {
+  display: table;
+  margin: auto;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
+}
+.deptoverlay p span {
+  border: 1px solid white;
+  padding: 1em 2em;
+  margin-top: 2em;
+  font-family: "Baloo Chettan", cursive;
+}
+.hr {
+  border: 1px solid white;
+  width: 4em;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.eachdept:hover .deptoverlay h5 {
+  margin-top: 0;
+}
+.eachdept:hover .deptoverlay p {
+  animation: show 0.6s 0.3s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#myVideo {
+  position: absolute;
+  /* width: 100%; */
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  /* .imagelink img,.backbutton img{
+        width: 2em;
+        height:2em;
+        margin-left: -2px;
+        margin-top: -7px;
+    } */
+  /* .imagelink,.backbutton{
+        width:4em;
+        height:4em;
+        margin-left: 5px;
+        margin-top: -5px;
+        margin-bottom: 15px;
+    } */
+}
+
+@media (max-width: 768px) {
+  .department {
+    margin-top: 3em;
+  }
+  .heading h3,
+  .heading h2 {
+    font-size: 40px;
+  }
+  .heading h1 {
+    font-size: 60px;
+  }
+  .col {
+    padding: 0;
+  }
+  .month {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .heading h3,
+  .heading h2 {
+    font-size: 25px;
+  }
+  .heading h1 {
+    font-size: 45px;
+  }
+  .eachdept {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .imagelink img,.backbutton img{
+        width: 2em;
+        height:30px;
+        margin-left: -5px;
+        margin-top: -10px;
+    } */
+  /* .imagelink,.backbutton{
+        width: 3.5em;
+        height: 3.5em;
+        margin-left: 5px;
+        margin-top: -10px;
+    } */
+  .coursedes {
+    padding-top: 50px;
+  }
+  .coursedes h1 {
+    font-size: 35px;
+  }
+  .month {
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .heading h3,
+  .heading h2 {
+    font-size: 25px;
+  }
+  .heading h1 {
+    font-size: 38px;
+    padding-top: 20px;
+  }
+  .eachdept {
+    width: 18em;
+    margin-left: 2px;
+    overflow: hidden;
+  }
+  .deptoverlay h5 {
+    margin-top: 100px;
+  }
+  #aa h5 {
+    margin-top: 80px;
+  }
+  /* .imagelink img,.backbutton img{
+        width: 1em;
+        height:22px;
+        margin-left: -5px;
+        margin-top: -20px;
+    } */
+  /* .imagelink,.backbutton{
+        width: 2.5em;
+        height: 2.5em;
+        margin-left: 5px;
+        margin-top: -10px;
+    } */
+  .coursedes h1 {
+    font-size: 30px;
+  }
+  .month {
+    padding-left: 10px;
+    padding-right: -30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading h3,
+  .heading h2 {
+    font-size: 20px;
+  }
+  .heading h1 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .eachdept {
+    height: 13em;
+    width: 18em;
+    margin-left: -30px;
+    overflow: hidden;
+  }
+  /* .imagelink img,.backbutton img{
+    width: 1em;
+    height:22px;
+    margin-left: -5px;
+    margin-top: -20px;
+} */
+  /* .imagelink,.backbutton{
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 5px;
+    margin-top: -10px;
+} */
+  .coursedes h1 {
+    font-size: 25px;
+  }
+  .month {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+}
+
+/* Courses */
+
+.coursedes {
+  margin: auto;
+  display: none;
+  text-align: center !important;
+  padding-bottom: 3em;
+}
+.coursedes ul {
+  text-align: justify;
+  width: 60%;
+  display: block;
+  margin: auto;
+  list-style-type: disc;
+}
+.coursedes h4 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1204px) {
+  .col {
+    margin: 0 2em;
+  }
+}
+
+.p,
+.f,
+.p1,
+.f1 {
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #c3c3c3;
+}
+
+.p,
+.p1 {
+  padding: 50px;
+  display: none;
+}

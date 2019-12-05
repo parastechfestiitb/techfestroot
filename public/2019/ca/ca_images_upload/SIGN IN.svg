@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="27" viewBox="0 0 124 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 22px;
+        font-family: Roboto-Black, Roboto;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+      }
+    </style>
+  </defs>
+  <text id="SIGN_IN" data-name="SIGN IN" class="cls-1"><tspan x="22.131" y="21">SIGN IN</tspan></text>
+</svg>

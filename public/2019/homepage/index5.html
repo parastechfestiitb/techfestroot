@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,300' rel='stylesheet' type='text/css'>
+
+    <!-- Main CSS file of the plug-in -->
+    <link rel="stylesheet" href="css/jquery.parallux/jquery.parallux.min.css">
+
+    <!-- The style file particular to this demo -->
+    <link rel="stylesheet" href="css/jquery.parallux/demos.css">
+</head>
+<body>
+<div class="parallux">
+    <!-- Define background here -->
+    <div class="parallux-bg fixed">
+        <div class="parallux-inner dark">
+            <!-- Put you content like images, video or any other HTML here -->
+            <img class="cover" src="https://www.jquery-az.com/jquery/images/slider-image-1.jpg">
+        </div>
+    </div>
+
+    <!-- Foreground - that will scroll normal -->
+    <div class="text">
+        <h2>The heading - Foreground</h2>
+        <p>This section will scroll normal. You may specify any captions, paragraphs or other information related to this section here.</p>
+    </div>
+
+</div>
+<section class="separator">
+    <h4>Heading for normal content</h4>
+    <p> This is non parallax section. Use any information, images etc. here</p>
+</section>
+<div class="parallux">
+    <div class="parallux-bg fixed">
+        <div class="parallux-inner light">
+            <img class="cover" src="https://www.jquery-az.com/jquery/images/slider-image-2.jpg">
+        </div>
+    </div>
+    <div class="text">
+        <h2>Heading 2</h2>
+        <p>You may specify any captions, paragraphs or other information related to this section here.</p>
+    </div>
+</div>
+<section class="separator">
+    <h4>Heading 3 - Normal content</h4>
+    <p> Some informaiton here.</p>
+</section>
+<div class="parallux">
+    <div class="parallux-bg fixed">
+        <div class="parallux-inner dark">
+            <img class="cover" src="https://www.jquery-az.com/jquery/images/strawberries.jpg">
+        </div>
+    </div>
+    <div class="text">
+        <h2>Heading 4</h2>
+        <p>You may specify any captions, paragraphs or other information related to this section here.</p>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="js/jquery.parallux/jquery.parallux.js"></script>
+<script>
+    $(function() {
+        $(".parallux").parallux();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7c8031e-b4b5-4507-a9f7-b0807326c74a" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/gamersleague/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamersleague/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="steam-auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamersleague/config/steam-auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gamersleague/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gamersleague/.env" />
+        <option value="$PROJECT_DIR$/gamersleague/composer.json" />
+        <option value="&lt;a8777c82-359e-498f-a558-d9349c035cf1&gt;/composer.json" />
+        <option value="&lt;a8777c82-359e-498f-a558-d9349c035cf1&gt;/.env" />
+        <option value="$PROJECT_DIR$/gamersleague/config/app.php" />
+        <option value="$PROJECT_DIR$/gamersleague/config/steam-auth.php" />
+        <option value="$PROJECT_DIR$/gamersleague/routes/web.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/gamersleague/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/gamersleague/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/composer" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/gamersleague/vendor/league/flysystem" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="189" />
+    <option name="y" value="92" />
+    <option name="width" value="974" />
+    <option name="height" value="348" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gamersleague" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamersleague" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gamersleague" type="cbb8eebc:String" user="gamersleague" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gamersleague" type="cbb8eebc:String" user="gamersleague" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gamersleague" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7c8031e-b4b5-4507-a9f7-b0807326c74a" name="Default" comment="" />
+      <created>1540210362278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540210362278</updated>
+      <workItem from="1540210366496" duration="1009000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1009000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" anchor="right" id="Remote Host" visible="true" weight="0.14536741" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12353568" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" visible="true" weight="0.32960325" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.18311292" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gamersleague/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamersleague/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamersleague/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamersleague/config/steam-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamersleague/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
