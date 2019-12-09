@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>  Techfest OnePlus Gamers' League | Techfest IIT Bombay</title>
+    <title>  Techfest Gamers' League | Techfest IIT Bombay</title>
     @include('layouts.meta')
     <link rel="icon" type="image/png" href="http://techfest.org/gleague/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
@@ -47,7 +47,7 @@
             <div class="nk-header-table-cell">
                 <div class="container">
                     <div class="nk-header-text">
-                        <h1 class="nk-title display-3"> Techfest OnePlus <br> Gamers' League</h1>
+                        <h1 class="nk-title display-3"> Techfest <br> Gamers' League</h1>
                         <div class="nk-gap-2"></div>
 {{--                        @if(session()->has('player'))--}}
 {{--                            <a href="#" class="nk-btn nk-btn-lg nk-btn-color-main-1 link-effect-4" data-nav-toggle="#nk-side"> <span>Dashboard</span> </a> &nbsp;&nbsp;&nbsp;&nbsp;--}}

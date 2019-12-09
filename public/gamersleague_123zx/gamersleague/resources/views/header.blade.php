@@ -36,12 +36,12 @@
             <div class="nk-nav-table">
                 <a href="http://techfest.org/gamersleague/" class="nk-nav-logo" style="white-space: nowrap;"> <img src="http://techfest.org/gamersleague/images/gl.png" style="height:60px" alt="Gamersleague"> </a>
                 <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
-                    <li style="text-align: center;">
-                        <p style="margin: 0px">Title Sponsor</p>
-                        <a target="_blank" href="https://www.oneplus.in/" class="nk-nav-logo" style="white-space: nowrap;">
-                            <img src="http://techfest.org/gamersleague/images/oneplus.png" style="height:60px; transform: scale(1.4)" alt="oneplus">
-                        </a>
-                    </li>
+{{--                    <li style="text-align: center;">--}}
+{{--                        <p style="margin: 0px">Title Sponsor</p>--}}
+{{--                        <a target="_blank" href="https://www.oneplus.in/" class="nk-nav-logo" style="white-space: nowrap;">--}}
+{{--                            <img src="http://techfest.org/gamersleague/images/oneplus.png" style="height:60px; transform: scale(1.4)" alt="oneplus">--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li style="text-align: center;">
                         <p style="margin: 0px"> Server partner</p>
                         <a target="_blank" href="https://www.sostronk.com/welcome" class="nk-nav-logo" style="white-space: nowrap;">
@@ -56,7 +56,7 @@
                     </li>
                     <li> <a href="http://techfest.org/gamersleague/"> Home</a> </li>
                     <li> <a href="{{route('csgo')}}"> CS GO </a></li>
-{{--                    <li> <a href="{{route('pubg')}}"> PUBG </a></li>--}}
+                    <li> <a href="{{route('pubg')}}"> PUBG </a></li>
 {{--                    <li> <a href="{{route('dota')}}"> DOTA 2 </a></li>--}}
                     <li class=" nk-mega-item nk-drop-item">
                         <a href="#">Contact Us</a>
@@ -66,7 +66,7 @@
                                 <li>
                                     <ul>
                                         <li class=""><a href="mailto:gamersleague@techfest.org">prateek@techfest.org</a></li>
-                                        <li class=""><a href="tel:+919460313067">+91 704 540 9458</a></li>
+                                        <li class=""><a href="tel:++91 7045409458">+91 704 540 9458</a></li>
                                     </ul>
 
                                 </li>
@@ -117,7 +117,7 @@
                         <ul class="nk-nav" style="vertical-align: unset">
                             <li class=" "> <a href="{{$current['profileurl']}}" target="_blank">{{$current['personaname']}}</a> </li>
                             <li><a href="{{route('csgo')}}">CSGO</a></li>
-{{--                            <li><a href="{{route('pubg')}}">PUBG</a></li>--}}
+                            <li><a href="{{route('pubg')}}">PUBG</a></li>
 {{--                            <li><a href="{{route('dota')}}">DOTA 2</a></li>--}}
                             <li class="text-danger"> <a href="http://techfest.org/gamersleague/logout" class="text-danger"> Logout</a> </li>
                         </ul>

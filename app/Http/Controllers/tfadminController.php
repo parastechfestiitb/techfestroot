@@ -207,6 +207,34 @@ class tfadminController extends Controller
         }
         else return "sign in to ca portal first";
     }
+    public function adminDashboard_certificate(){
+        if(session()->has('user')) {
+            $current_user = session()->get('user');
+            $admin = DB::table('admins')->where('email', '=', $current_user->email)->first();// row ko array bana ke return ki;
+            if(!empty($admin)) {
+                if ($admin->email == $current_user->email ) {
+                    $eligible_user_for_certi = DB::table('tf_certificate')->get();
+                    return view('2019.adminDashboard.admin_certificate')->with(['eligible_user_for_certi' => $eligible_user_for_certi, 'admin' => $current_user]);
+                }
+            }
+            else return "you are not admin access to this page, Contact OCs for more details";
+        }
+        else return "sign in to ca portal first";
+    }
+    public function adminDashboard_certificate_insert_get(){
+        if(session()->has('user')) {
+            $current_user = session()->get('user');
+            $admin = DB::table('admins')->where('email', '=', $current_user->email)->first();// row ko array bana ke return ki;
+            if(!empty($admin)) {
+                if ($admin->email == $current_user->email ) {
+                    $all_certificate = DB::table('certificates')->skip(82)->take(200)->get();
+                    return view('2019.adminDashboard.admin_certificate_insert')->with(['admin' => $current_user,'all_certificate'=>$all_certificate]);
+                }
+            }
+            else return "you are not admin access to this page, Contact OCs for more details";
+        }
+        else return "sign in to ca portal first";
+    }
     public function payment_fix(Request $data){
 //        DB::table('payment_log_2019')->where(['ticketId'=>$data->ticketId,])->update([
 //            'email'=>$data->email,

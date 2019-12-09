@@ -297,7 +297,7 @@
                     Contact Us
                 </h4>
             </div>
-            <div class="col-sm-6 col-md-4 p-t-50">
+            <div class="col-sm-6 col-md-3 p-t-50">
                 <!-- - -->
 
 
@@ -320,7 +320,7 @@
 
 
             </div>
-            <div class="col-sm-6 col-md-4 p-t-50">
+            <div class="col-sm-6 col-md-3 p-t-50">
                 <!-- - -->
 
                 <ul class="m-b-70">
@@ -342,8 +342,10 @@
 
 
             </div>
-            <div class="col-sm-6 col-md-4 p-t-10" style="">
-
+            <div class="col-sm-6 col-md-3 p-t-10" style="margin: auto">
+                <img src="/2019/initiatives/financial_literacy/icici.jpg" alt="" style="width: 100%;background-color: white; border-radius: 10px;">
+            </div>
+            <div class="col-sm-6 col-md-3 p-t-10" style="margin: auto">
                 <img src="/2019/initiatives/financial_literacy/iunderstand.png" alt="" style="width: 100%;background-color: white; border-radius: 10px">
             </div>
 

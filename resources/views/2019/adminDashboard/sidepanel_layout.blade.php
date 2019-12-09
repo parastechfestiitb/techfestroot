@@ -145,6 +145,13 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
                         {{--                            <li><a href="https://techfest.org/adminca">CA Events</a></li>--}}
                     </ul>
                 </li>
+                <li class="active has-sub">
+                    <a class="js-arrow" href="#"><i class="fas fa-tachometer-alt"></i>Certificate</a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li><a href="/admindashboard_certificate">Eligible Participant</a></li>
+                        <li><a href="/admindashboard_certificate/insert">Insert Participant</a></li>
+                    </ul>
+                </li>
                 <li class="active has-sub" >
                     <a class="" href="/admindashboard_robowars"><i class="fas fa-tachometer-alt"></i>Robowars</a>
                 </li>
@@ -191,6 +198,7 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
                             <li><a href="/admindashboard_workshops/UltrasonicTesting  ">UltrasonicTesting</a></li>
                             <li><a href="/admindashboard_workshops/MachineLearning2  ">MachineLearning2</a></li>
                             <li><a href="/admindashboard_workshops/WirelessRobotics  ">WirelessRobotics</a></li>
+                            <li><a href="/admindashboard_workshops/Blockchain  ">Blockchain</a></li>
                         </ul>
                     </li>
 

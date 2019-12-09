@@ -20,6 +20,7 @@ use Mail;
 class CertificateController extends Controller
 {
 
+
     //https://techfest.org/admin/certificate
     public function generate(Certificate $certificate, Participant $participant){
         $i = DB::table('certificate_participant')->where(['certificate_id'=>$certificate->id,'participant_id'=>$participant->id])->first()->id;

@@ -378,7 +378,8 @@
     <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
     <aside id="colorlib-aside" role="complementary" class="border js-fullheight" >
         <a href="/"><img src="/2019/homepage/logo_edit.png" alt="" style="width: 130%; margin-left:-15%"></a>
-        <nav id="colorlib-main-menu" role="navigation" style="margin-top: 150%; font-size: medium; ">
+        <a href="/"><img src="/2019/compi/images/cas.png" alt="" style="width: 100%;; background-color: white;margin-top: 20px"></a>
+        <nav id="colorlib-main-menu" role="navigation" style="margin-top: 10vh; font-size: medium">
             <ul>
                 <li ><a href="/competitions">Home</a></li>
                 <li ><a onclick="myFunction1()">Structure</a></li>

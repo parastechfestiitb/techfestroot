@@ -28,7 +28,7 @@
                                 @if(!empty($team_members))
                                     @if(!empty($team_members[0]))
                                         <br>You are already registered
-                                        <br>Team ID-{{$workshops_info->coeff}}-{{$team_members[0]->id}}
+                                        <br>Team ID-{{$workshops_info->coeff}}{{$team_members[0]->id}}
                                         @if(!empty($payment_row->ticketId))
                                             <br>Payment Done
                                             <br>Ticket ID-{{$payment_row->ticketId}}

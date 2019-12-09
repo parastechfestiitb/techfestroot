@@ -238,6 +238,7 @@
                         <div class="banner-content" data-aos="zoom-in" style=" overflow: visible">
                             <img src="/2019/ic/Unified Logo_2015_ISO.jpg" alt="" style="max-height: 60px; margin: auto">
                             <img src="/2019/ic/NSTSE_Logo.jpg" alt="" style="max-height: 60px; margin: auto">
+                            <a href="https://www.justexam.in/"><img title="Portal Partner" src="/2019/ic/exam.png" alt="" style="max-height: 60px; margin: auto"></a>
                             <h1 class="text-white text-uppercase mb-10">INNOVATION CHALLENGE</h1>
                             <p class="text-white mb-30" style="font-size:1.1em;"><span class="text-white-50">Brought to you by</span > Techfest 2019-20, IIT Bombay<br><br><br><span class="text-white-50">In collaboration with Unified Council</span></p>
                             <a href="/innovationchallenge/login" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Login</span></a>

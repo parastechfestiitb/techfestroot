@@ -47,7 +47,7 @@ class WorkshopController extends Controller
     }
 
     public function Get(){
-        $all_workshops_info = DB::table('tf_workshops_2019')->take(25)->get();
+        $all_workshops_info = DB::table('tf_workshops_2019')->take(26)->get();
         return view('2019.workshops.workshops')->with(['all_workshops_info' => $all_workshops_info]);
 //        return Event::where('category','Workshop')->orderBy('order_by')->get();
     } //returns all workshop page
@@ -58,7 +58,7 @@ class WorkshopController extends Controller
     } //returns all workshop page
 
     public function mobile_Get(){
-    $all_workshops_info = DB::table('tf_workshops_2019')->take(25)->get();
+    $all_workshops_info = DB::table('tf_workshops_2019')->take(26)->get();
     return view('2019.mobile.all_workshops')->with(['all_workshops_info' => $all_workshops_info]);
 //        return Event::where('category','Workshop')->orderBy('order_by')->get();
     } //returns all workshop page for mobile

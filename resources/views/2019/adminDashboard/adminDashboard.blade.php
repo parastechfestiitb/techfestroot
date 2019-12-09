@@ -73,36 +73,36 @@
                     //                    $zonal = ["Mumbai","Lucknow","Jaipur"];
                     $zonal_number = 0;
                     //                    foreach ($zonal as $zonal){
-//                    for($r=0; $r < $total_reg; $r++){
-//                        $competition_team_email = $big_data[$r]->$competition_team;
-//                        if(!empty($competition_team_email)){
-//                            $team_var_count = DB::table('tf_reg')->where([$competition_team => $competition_team_email])->count();
-////                            print $team_var_count;
-////                            if($team_var_count == 0){
-//////                                $arr_0[$ar_0] = $competition_team_email;
-////                                $ar_0 = $ar_0 + 1;
-////                            }
-//                            if($team_var_count == 1){
-////                                $arr_1[$ar_1] = $competition_team_email;
-//                                $ar_1 = $ar_1 + 1;
+                    for($r=0; $r < $total_reg; $r++){
+                        $competition_team_email = $big_data[$r]->$competition_team;
+                        if(!empty($competition_team_email)){
+                            $team_var_count = DB::table('tf_reg')->where([$competition_team => $competition_team_email])->count();
+//                            print $team_var_count;
+//                            if($team_var_count == 0){
+////                                $arr_0[$ar_0] = $competition_team_email;
+//                                $ar_0 = $ar_0 + 1;
 //                            }
-//                            if($team_var_count == 2){
-////                                $arr_2[$ar_2] = $competition_team_email;
-//                                $ar_2 = $ar_2 + 1;
-//                            }
-//                            if($team_var_count == 3){
-////                                $arr_3[$ar_3] = $competition_team_email;
-//                                $ar_3 = $ar_3 + 1;
-//                            }
-//                            if($team_var_count == 4){
-////                                $arr_4[$ar_4] = $competition_team_email;
-//                                $ar_4 = $ar_4 + 1;
-//                            }
-//
-//                        }
-//                        if(empty($competition_team_email)){
-//                            $ar_0 = $ar_0 + 1;
-//                        }
+                            if($team_var_count == 1){
+//                                $arr_1[$ar_1] = $competition_team_email;
+                                $ar_1 = $ar_1 + 1;
+                            }
+                            if($team_var_count == 2){
+//                                $arr_2[$ar_2] = $competition_team_email;
+                                $ar_2 = $ar_2 + 1;
+                            }
+                            if($team_var_count == 3){
+//                                $arr_3[$ar_3] = $competition_team_email;
+                                $ar_3 = $ar_3 + 1;
+                            }
+                            if($team_var_count == 4){
+//                                $arr_4[$ar_4] = $competition_team_email;
+                                $ar_4 = $ar_4 + 1;
+                            }
+
+                        }
+                        if(empty($competition_team_email)){
+                            $ar_0 = $ar_0 + 1;
+                        }
 //                    }
                     //                        $zonal_count[$zonal_number] = [count($arr_1), count($arr_2)/2, count($arr_3)/3, count($arr_4)/4, (count($arr_1) + count($arr_2)/2 + count($arr_3)/3 + count($arr_4)/4)];
                     //                        $zonal_number = $zonal_number +1;
@@ -110,7 +110,7 @@
                     //                        $arr_2 = [];
                     //                        $arr_3 = [];
                     //                        $arr_4 = [];
-                    //                    }
+                                        }
                     //                    $sum = $total_competition_1_team + $total_competition_2_team + $total_competition_3_team + $total_competition_4_team;
 
                     ?>

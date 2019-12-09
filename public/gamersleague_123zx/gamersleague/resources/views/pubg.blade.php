@@ -65,7 +65,7 @@
     <div class="nk-page-border-b"></div>
     <div class="nk-page-border-l"></div>
 </div>
-@include('header2')
+@include('header')
 <div class="nk-main">
     <div class="container">
         <div class="nk-gap-4"></div>
@@ -178,9 +178,11 @@
                             {{--                                    </div>--}}
                             {{--                                </div>--}}
                             {{--                            @else--}}
+
                             <form action="#" class="nk-form nk-product-addtocart">
                                 <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".bd-example-modal-lg">Create Team</button>
-                                {{--                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".join-modal-lg">Join Team</button>--}}
+{{--                                <button class="nk-btn nk-btn-x2" data-toggle="modal">Coming Soon</button>--}}
+{{--                                                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".join-modal-lg">Join Team</button>--}}
                                 <span class="nk-product-price">
                                         INR 2,00,000
                                     </span>
@@ -268,9 +270,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#tab-format" role="tab" data-toggle="tab">Format</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tab-rules" role="tab" data-toggle="tab">Rules</a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="#tab-rules" role="tab" data-toggle="tab">Rules</a>--}}
+{{--                </li>--}}
                 {{--                    <li class="nav-item">--}}
                 {{--                        <a class="nav-link" href="#tab-teams" role="tab" data-toggle="tab">Teams <small>({{count($teams)}})</small></a>--}}
                 {{--                    </li>--}}
@@ -286,7 +288,7 @@
                                     <li>Registrations Close: 14th December 2019</li>
                                     <li>Brackets and Schedule release: 16th December 2019</li>
                                     <li>Online Qualifiers Starts: 17th December 2019</li>
-                                    <li>LAN Playoffs: 3rd-5th January</li>
+                                    <li>Final Playoffs: 3rd-5th January</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">

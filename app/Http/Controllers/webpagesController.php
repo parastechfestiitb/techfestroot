@@ -195,4 +195,15 @@ Om Jaiswal
             return view('2019.summit.redirect')->with(['payment_link' =>$payment_link]);
         }
     }
+
+    public function technoholix_reg(Request $data){
+        DB::table('tf_techx')->insert([
+            'name'=>$data->name,
+            'email'=>$data->email,
+            'college_institute'=>$data->college_institute,
+            'city'=>$data->city,
+            'age'=>$data->age,
+            'created_at'=>Carbon::now()->addHours(5)->addMinutes(30)
+        ]);
+    }
 }

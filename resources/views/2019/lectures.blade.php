@@ -40,7 +40,7 @@
 
         body {
             background-color: #275E80; /* For browsers that do not support gradients */
-            background-image: linear-gradient(to right, #5F4A85 , #70427D);           
+            background-image: linear-gradient(to right, #5F4A85 , #70427D);
         }
         ::-webkit-scrollbar {
             width: 0px;  /* Remove scrollbar space */

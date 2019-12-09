@@ -204,6 +204,12 @@ Route::get('/admindashboard_payment_mun', 'tfadminController@adminDashboard_paym
 Route::get('/admindashboard_payment_workshops', 'tfadminController@adminDashboard_payment_workshops');
 Route::get('/admindashboard_ic', 'tfadminController@admindashboard_ic');
 Route::get('/admindashboard_hospitality', 'tfadminController@admindashboard_hospitality');
+
+Route::get('/admindashboard_certificate', 'tfadminController@adminDashboard_certificate');
+Route::get('/admindashboard_certificate/insert', 'tfadminController@adminDashboard_certificate_insert_get');
+Route::post('/admindashboard_certificate/insert', 'CertificateController_2019@insert');
+Route::get('2019/certificate/{id}/{key}', 'CertificateController_2019@certificate_get');
+
 Route::get('/payment_fix', function () {return view('2019.adminDashboard.payment_fix')->with(['id' =>0]);});
 //Route::get('/payment_fix', 'tfadminController@payment_fix');
 Route::post('/payment_fix', 'tfadminController@payment_fix');
@@ -607,9 +613,9 @@ Route::get('/esports', 'MainController@esports');
 //Route::get('/workshops', 'MainController@workshops');
 Route::redirect('/workshop', '/workshops');
 Route::redirect('/workshops/IndustrySummit', '/industrysummit');
-Route::redirect('/workshops/MediaSummit', '/mediasummit');
+//Route::redirect('/workshops/MediaSummit', '/mediasummit');
 Route::redirect('/m/workshops/IndustrySummit', '/industrysummit');
-Route::redirect('/m/workshops/MediaSummit', '/mediasummit');
+//Route::redirect('/m/workshops/MediaSummit', '/mediasummit');
 Route::redirect('/EthicalHacking', '/workshops/EthicalHacking');
 Route::redirect('/ethicalhacking', '/workshops/EthicalHacking');
 Route::redirect('/sixthsenserobotics', '/workshops/6thSenseRobotics');
@@ -625,6 +631,7 @@ Route::redirect('/underwaterrobotics', '/workshops/UnderwaterRobotics');
 Route::redirect('/embeddedsystems', '/workshops/EmbeddedSystems');
 Route::redirect('/artificialintelligence', '/workshops/ArtificialIntelligence');
 Route::redirect('/machinelearning', '/workshops/MachineLearning');
+Route::redirect('/machinelearning2', '/workshops/MachineLearning2');
 Route::redirect('/alexaeverywhere', '/workshops/AlexaEverywhere');
 Route::redirect('/digitalmarketing', '/workshops/DigitalMarketing');
 Route::redirect('/quadcopter', '/workshops/Quadcopter');
@@ -701,6 +708,8 @@ Route::get('/ift/form', function () {return view('2019.ift.ift_form');});
 Route::post('/ift/form', 'webpagesController@ift_form_reg');
 
 Route::get('/technoholix', 'MainController@technoholix');
+Route::get('/technoholix2', function () {return view('2019.technoholix.technoholix');});
+Route::post('/technoholix/post', 'webpagesController@technoholix_reg');
 //Route::get('/workshops', 'MainController@workshops');
 Route::get('/media', function () {return view('2019.media');});
 Route::get('/lectures', function () {return view('2019.lectures');});
@@ -906,15 +915,15 @@ Route::post('/initiatives/financial_literacy/post', 'EventController@finlit_reg'
 
 //Route::get('/cyclothon', 'EventController@cyclothonGet');
 //Route::post('/robowars/2018', 'EventController@robowarsPost');
-Route::prefix('/2017')->group(function () {
-    Route::get('/', 'PreviousController@home')->name('home');
-    Route::get('/events/{link}', 'PreviousController@eventsLink')->name('events.link');
-    Route::get('/{link}', 'PreviousController@link')->name('link');
-});
-Route::redirect('/google', 'https://techfest.org/Google%20Android/workshop');
-Route::prefix('/android')->group(function () {
-    Route::get('qr/{id}', 'Android\MainController@qrGen');
-});
+//Route::prefix('/2017')->group(function () {
+//    Route::get('/', 'PreviousController@home')->name('home');
+//    Route::get('/events/{link}', 'PreviousController@eventsLink')->name('events.link');
+//    Route::get('/{link}', 'PreviousController@link')->name('link');
+//});
+//Route::redirect('/google', 'https://techfest.org/Google%20Android/workshop');
+//Route::prefix('/android')->group(function () {
+//    Route::get('qr/{id}', 'Android\MainController@qrGen');
+//});
 //
 //Route::domain('m.techfest.org')->name('mobile.')->middleware('minify')->group(function () {
 //    Route::get('/', 'MobileController@Get')->name('Get');

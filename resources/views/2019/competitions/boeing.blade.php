@@ -489,11 +489,11 @@
                                 @endif
                             @endif
                             @if(empty($user_row->email))
-                                <button class="btn btn-primary btn-learn " onclick="myFunction()">Register</button>
+                                <button class="btn btn-primary btn-learn " >Registration closed</button>
                                 <a href="/2019/compi/ps/How to register.pdf" style="color: white">Want to know how to register - Click here</a>
 
                             @endif
-                            <div id="snackbar">Sign in to register</div>
+{{--                            <div id="snackbar">Sign in to register</div>--}}
                             @if(!empty($user_row))
                                 @if($user_row->boeing > 0 && empty($user_row->boeing_team))
                                     <div class="alert alert-success">

@@ -23,7 +23,7 @@
                         <div class="ft-recipe__content" style="min-height: 4em;">
                             <h4 style="text-align: center;margin: 3px 0px;font-size: 1.2em;">{{$workshop->name}}</h4>
                             <p class="description">{!! $workshop->description !!}</p>
-                            <footer class="content__footer"><a style="width: 100%" href="/workshops/{{$workshop->link}}">Register</a></footer>
+                            <footer class="content__footer"><a style="width: 100%" href="/workshops/{{$workshop->link}}">{{$workshop->registration_text}}</a></footer>
                         </div>
                     </div>
                 </div>

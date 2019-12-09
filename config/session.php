@@ -151,8 +151,8 @@ return [
     |
     */
 
-//    'domain' => env('SESSION_DOMAIN', null),
-    'domain' => 'techfest.org',
+    'domain' => env('SESSION_DOMAIN', null),
+//    'domain' => 'techfest.org',
 
     /*
     |--------------------------------------------------------------------------

@@ -857,7 +857,29 @@
 </div>
 </section>
 
+<section class="site-section bg-light"  data-aos="fade-up" style="    padding-bottom: 1em;padding-top: 0em;">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title mb-3">Our Partners</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-center">
+                <a href="https://www.bitsmungoa.co.in/" target="_blank">
+                    <img src="/2019/twmun/images/BITSMUN 20 Logo.png" alt="" style="width: 100%;">
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/2019/twmun/images/MUN_2019_Logo.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-3 text-center">
 
+            </div>
+        </div>
+    </div>
+</section>
 <section class="site-section bg-light" id="contact-section" data-aos="fade-up" style="    padding-bottom: 1em;padding-top: 0em;">
     <div class="container">
         <div class="row mb-5">

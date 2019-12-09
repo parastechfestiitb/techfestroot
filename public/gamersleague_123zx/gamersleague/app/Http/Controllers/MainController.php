@@ -72,7 +72,7 @@ class MainController extends Controller
             'phone'=>'required'
         ]);
         DB::table('players')->where('steamid',session()->get('steamid'))->update(['name'=>$r->name,'email'=>$r->email,'phone'=>$r->phone]);
-        return redirect()->route('index');
+        return redirect()->route('csgo');
     }
 
     public function csgoGet(Request $r){
@@ -182,12 +182,13 @@ class MainController extends Controller
         'nickname'=>$r->nickname,
         'p1_id'=>$r->p1_id,
         'team_leader_number'=>$r->team_leader_number,
+        'team_leader_email'=>$r->team_leader_email,
         'crew_name'=>$r->crew_name,
         'p2_id'=>$r->p2_id,
         'p2_number'=>$r->p2_number,
         'p3_id'=>$r->p3_id,
         'p3_number'=>$r->p3_number,
-        'p4_id'=>$r->p3_id,
+        'p4_id'=>$r->p4_id,
         'p4_number'=>$r->p4_number,
         ]);
         return redirect()->route('pubg');
