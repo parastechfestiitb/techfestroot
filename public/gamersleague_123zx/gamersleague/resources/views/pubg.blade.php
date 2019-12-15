@@ -180,8 +180,8 @@
                             {{--                            @else--}}
 
                             <form action="#" class="nk-form nk-product-addtocart">
-                                <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".bd-example-modal-lg">Create Team</button>
-{{--                                <button class="nk-btn nk-btn-x2" data-toggle="modal">Coming Soon</button>--}}
+{{--                                <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".bd-example-modal-lg">Create Team</button>--}}
+                                <button class="nk-btn nk-btn-x2" data-toggle="modal">Registration Closed</button>
 {{--                                                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".join-modal-lg">Join Team</button>--}}
                                 <span class="nk-product-price">
                                         INR 2,00,000
@@ -268,13 +268,13 @@
                     <a class="nav-link active" href="#tab-details" role="tab" data-toggle="tab">Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tab-format" role="tab" data-toggle="tab">Format</a>
+                    <a class="nav-link" href="#tab-rules" role="tab" data-toggle="tab">Rules</a>
                 </li>
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="#tab-rules" role="tab" data-toggle="tab">Rules</a>--}}
-{{--                </li>--}}
+                <li class="nav-item">
+                    <a class="nav-link" href="#tab-structure " role="tab" data-toggle="tab">Structure </a>
+                </li>
                 {{--                    <li class="nav-item">--}}
-                {{--                        <a class="nav-link" href="#tab-teams" role="tab" data-toggle="tab">Teams <small>({{count($teams)}})</small></a>--}}
+                {{--                        <a class="nav-link" href="#tab-point" role="tab" data-toggle="tab">Point System <small>({{count($teams)}})</small></a>--}}
                 {{--                    </li>--}}
             </ul>
             <div class="tab-content">
@@ -304,65 +304,54 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade in" id="tab-format">
+                <div role="tabpanel" class="tab-pane fade in" id="tab-rules">
                     <div class="nk-gap-3"></div>
                     <div class="nk-box-3 bg-dark-1">
                         <div class="row">
                             <div class="col-md-6">
                                 <ul>
-                                    <li>Maps: Standard Valve Active Duty Maps</li>
-                                    <li>Gameplay: Standard Competitive Gameplay</li>
-                                    <li>Format: Semi-Finals and Finals will be Bo3, rest Bo1</li>
-                                    <li>Venue: Indian Institute of Technology, Bombay- 400076</li>
+                                    <li>Each participating player must use a Mobile to participate throughout the tournament. If found using emulator/bluestacks will be straightaway disqualified and kicked out of the competition.</li>
+                                    <li>Personal statistics of all players must be kept visible otherwise will be disqualified.</li>
+                                    <li>Any type of cheating is not allowed, anyone found guilty will be immediately disqualified.</li>
+                                    <li>Additional hardware like joysticks or mobile triggers is not allowed. Anyone found using them will be disqualified from the competition.</li>
+                                    <li>It is the responsibility of the player to ensure proper connectivity and organizers won’t be responsible for it.</li>
+                                    <li>The version of PUBG MOBILE used for all Tournament Games will be the latest version 0.16.0</li>
+                                    <li>It is expected that all Tournament Games will begin at the scheduled time. Any delay caused by issues arising out of a Team Member’s inadequate preparation will be assessed by Techfest Organizers</li>
+                                    <li>The Character ID of the players submitted during registration must match with the Player’s ID in the Room during the whole tournament.</li>
+                                    <li>In case of any discrepancy, the final call will be taken by the Tournament Organizers.</li>
+                                    <li>Ipads are not allowed.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade in" id="tab-rules">
+                <div role="tabpanel" class="tab-pane fade in" id="tab-structure">
                     <div class="nk-gap-3"></div>
                     <div class="nk-box-3 bg-dark-1">
+                        <h4>PHASE 1 (Online Knockout stage)</h4>
                         <ul>
-                            <li>General Game Specific Rules for Counter-Strike: Global Offensive should be followed</li>
-                            <li>Major penalties are given for major incidents such as deliberately deceiving admins, failing to show up formatches, repeated rule breaking, and any activities will violate the General Code of Conduct</li>
-                            <li>All broadcasting rights of the Tournament are owned by the tournament organizers</li>
-                            <li>All matches in the Tournament should start as stated on the website, no changes to the time can be requested. All Teams and Players in a match should be on the server or in the game lobby and ready to go at the latest 15 minutes before the match is to start</li>
-                            <li>When cheating is uncovered, The Team will be disqualified from the current Tournament. The use of the following programs will result in a cheat ban: Multihacks, Wallhack, Aimbot, Coloured Models, NoRecoil, No-Flash and Sound changes. These are only examples, other programs or methods may be considered cheats as well like- using different players account.</li>
-                            <li>To make any changes in the team roster, Team leader needs to send a mail at prateek@techfest.org for the same before the registrations are closed</li>
-                            <li>Just in case any team is unable to make it to the lan final venue. The next best contender will replace that team</li>
-                            <li>In case of any dispute, Organizers decision will be final and binding for all</li>
-                            <li>For any queries or reporting of any incidents in-game, kindly drop a mail at prateek@techfest.org</li>
+                            <li>This phase will be a knockout phase and top 4 teams from each room will qualify for the next round i.e Phase 2.</li>
+                            <li>In this phase, only one match will be played per team.</li>
+                            <li>All the teams will be provided with the time slots of their match, they should ensure proper connectivity and well being of devices.</li>
+                            <li>It is mandatory for all the teams to play with their full roster i.e. All the members should be present in the match, teams unable to do this will be automatically disqualified</li>
+                            <li>All team members will be provided with Room id and password through SMS and an email will be sent to the team leader.</li>
+                            <li>The team will be provided a buffer time of 10 min after to enter the room after the scheduled time. Teams not able to follow this will be disqualified.</li>
+                            <li>All the teams will be notified with room ID and password 15 minutes before the scheduled time, and the rooms will be available for participants to enter.</li>
                         </ul>
+                        <br>
+                        <h4>PHASE 2 (Online Semifinals)</h4>
+                        <ul>
+                            <li>This round will consist of all the teams qualifying Phase 1.</li>
+                            <li>All the selected teams will be contacted through email/phone and each team member have to submit a School/College ID proof, Contact Info along with Character ID of PUBG Mobile.</li>
+                            <li>All the selected teams will be bifurcated in 4 different groups/rooms and top 4 teams from each room will be selected for Finals.</li>
+                            <li>Each group will have to play 3 matches i.e 3 maps (Erangel, Miramar, Sanhok) and based on the Points System top 4 teams from each group will be selected.</li>
+                            <li>Each team must follow the schedule of all the matches very strictly, failure to do so will lead to disqualification of the team.</li>
+                        </ul>
+                        <br>
+                        <h3>FInals(@ Techfest,  IITB) All the details will be mailed to top 16 teams.</h3>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="tab-teams">
-                    <div class="nk-gap-3"></div>
-                    <div class="row vertical-gap lg-gap equal-height">
-                        @foreach($teams as $t)
-                            <div class="col-md-6">
-                                <div class="nk-box-3 bg-dark-1">
-                                    <h3 class="nk-title h4 text-center">{{$t->name}}</h3>
-                                    <div class="nk-gap"></div>
-                                    <div class="img-container" style="text-align:center">
-                                        <img src="http://techfest.org/gamersleague{{Storage::url( $t->image ) }}" class="nk-img" alt="" style="margin:auto;height:300px;width: 300px;object-fit:cover;">
-                                    </div>
-                                    <div class="nk-gap"></div>
-                                    <h4 class="text-center">Team Members:</h4>
-                                    <table class="tgroup">
-                                        <tr>
-                                            @for($x = 0; $x<count($t->players);$x+=1)
-                                                <td><a href="{{$t->players[$x]->profileurl}}" target="_blank"><img src="{{$t->players[$x]->avatarfull}}" class="nk-img-fit" alt="{{$t->players[$x]->personaname}}"></a></td>
-                                            @endfor
-                                            @for($x=0;$x<5-count($t->players);$x+=1)
-                                                <td></td>
-                                            @endfor
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
+               
             </div>
         </div>
         <!-- END: Tabs -->

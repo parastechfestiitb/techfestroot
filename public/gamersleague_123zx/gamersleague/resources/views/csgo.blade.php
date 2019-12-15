@@ -122,9 +122,12 @@
                                 </p>
                             </div>
                             @if(!session()->has('steamid'))
-                                <form action="{{route('redirector')}}" class="nk-form nk-product-addtocart">
-                                    <input type="hidden" name="link" value="{{url()->current()}}">
-                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".manage-team">Login Before Registering</button>
+{{--                                <form action="{{route('redirector')}}" class="nk-form nk-product-addtocart">--}}
+                                <form action="#" class="nk-form nk-product-addtocart">
+{{--                                    <input type="hidden" name="link" value="{{url()->current()}}">--}}
+{{--                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".manage-team">Login Before Registering</button>--}}
+                                    <button class="nk-btn nk-btn-x2" data-toggle="modal" data-target=".manage-team">Registration Closed</button>
+
                                     <span class="nk-product-price">INR 2,00,000</span>
                                 </form>
                             @elseif($player!==null && $csgo!==null)

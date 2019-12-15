@@ -518,7 +518,7 @@
                                 ~ Team Techfest
 
                             </p>
-                            <a href="https://www.youtube.com/watch?time_continue=160&v=2z3CEBv8PLI" title="Official Aftermovie">
+                            <a href="https://www.youtube.com/watch?v=jZt53MjhiX4" title="Official Aftermovie">
                                 <img src="/2019/homepage/images/aftermovie.jpg" alt="" style="height: 30.5vh; width: auto; position: absolute; bottom: 13.8vh;">
 
                             </a>

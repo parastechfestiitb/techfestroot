@@ -411,7 +411,7 @@
                         <h3 style="text-align: center">ZONE-2</h3>
                         <h2 style="text-align: center">18th December, 2019</h2>
                         <p style="text-align: center;color: black">2pm - 8pm</p>
-                        <P>Jammu and Kashmir, Haryana, Utrakhand, Punjab, Chandigarh, Delhi, Uttar Pradesh</P>
+                        <P>Jammu and Kashmir, Haryana, Utrakhand, Punjab, Chandigarh, Himachal Pradesh, Delhi, Uttar Pradesh</P>
 
                     </div>
                 </div>

@@ -6,7 +6,7 @@
             document.location = "/contact-us";
         }
     </script>
-{{--    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />--}}
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     {{--    <script type="text/javascript">--}}
 {{--        if (screen.width >= 992) {--}}
@@ -45,7 +45,7 @@
             background: white;
         }
 
-        .card h1, h2{
+        .card h4, p{
             font-weight: bold;
             /*font-size: large;*/
         }
@@ -71,101 +71,101 @@
 <body>
 
 <div class="head-c">
-    Overall Coordinators
+    <h2>Overall Coordinators</h2>
 </div>
     <div class="card" >
         <img src="/2019/contactus/sahilsingh.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Sahil Singh</h1>
-        <h2 style="text-align: center;">sahil@techfest.org</h2>
-        <h2 style="text-align: center;"></h2>
+        <h4 style="text-align: center;">Sahil Singh</h4>
+        <p style="text-align: center;">sahil@techfest.org</p>
+        <p style="text-align: center;"></p>
     </div>
     <div class="card">
         <img src="/2019/contactus/rathore.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Himanshu Rathore</h1>
-        <h2 style="text-align: center;">rathore@techfest.org</h2>
-        <h2 style="text-align: center;"></h2>
+        <h4 style="text-align: center;">Himanshu Rathore</h4>
+        <p style="text-align: center;">rathore@techfest.org</p>
+        <p style="text-align: center;"></p>
     </div>
 
 <div class="head-c">
-    Marketing
+    <h3>Marketing</h3>
 </div>
 
     <div class="card" >
         <img src="/2019/contactus/sahildixit.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Sahil Dixit</h1>
-        <h2 style="text-align: center;">sahildixit@techfest.org</h2>
-        <h2 style="text-align: center;">8433834838</h2>
+        <h4 style="text-align: center;">Sahil Dixit</h4>
+        <p style="text-align: center;">sahildixit@techfest.org</p>
+        <p style="text-align: center;">8433834838</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/pratik.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Pratik Phule</h1>
-        <h2 style="text-align: center;">pratik@techfest.org</h2>
-        <h2 style="text-align: center;">7038560585</h2>
+        <h4 style="text-align: center;">Pratik Phule</h4>
+        <p style="text-align: center;">pratik@techfest.org</p>
+        <p style="text-align: center;">7038560585</p>
     </div>
 <div class="head-c">
-    Hospitality and F&B
+    <h3>Hospitality and F&B</h3>
 </div>
     <div class="card" >
         <img src="/2019/contactus/waqas.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Waqas Ahmad</h1>
-        <h2 style="text-align: center;">waqas@techfest.org</h2>
-        <h2 style="text-align: center;">9082402186</h2>
+        <h4 style="text-align: center;">Waqas Ahmad</h4>
+        <p style="text-align: center;">waqas@techfest.org</p>
+        <p style="text-align: center;">9082402186</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/bhuvanesh.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Bhuvanesh Gupta</h1>
-        <h2 style="text-align: center;">bhuvanesh@techfest.org</h2>
-        <h2 style="text-align: center;">8949802814</h2>
+        <h4 style="text-align: center;">Bhuvanesh Gupta</h4>
+        <p style="text-align: center;">bhuvanesh@techfest.org</p>
+        <p style="text-align: center;">8949802814</p>
     </div>
 <div class="head-c">
-    Media and Publicity
+    <h3>Media and Publicity</h3>
 </div>
     <div class="card" >
         <img src="/2019/contactus/siddharth.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Siddharth Maniar</h1>
-        <h2 style="text-align: center;">siddharth@techfest.org</h2>
-        <h2 style="text-align: center;">7045524155</h2>
+        <h4 style="text-align: center;">Siddharth Maniar</h4>
+        <p style="text-align: center;">siddharth@techfest.org</p>
+        <p style="text-align: center;">7045524155</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/shreshth.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Shreshth Geevith</h1>
-        <h2 style="text-align: center;">shreshth@techfest.org</h2>
-        <h2 style="text-align: center;">7506191721</h2>
+        <h4 style="text-align: center;">Shreshth Geevith</h4>
+        <p style="text-align: center;">shreshth@techfest.org</p>
+        <p style="text-align: center;">7506191721</p>
     </div>
 
 <div class="head-c">
-    Infrastructure
+    <h3>Infrastructure</h3>
 </div>
 
     <div class="card" >
         <img src="/2019/contactus/vaibhav.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Vaibhav Shinde</h1>
-        <h2 style="text-align: center;">vaibhav@techfest.org</h2>
-        <h2 style="text-align: center;">7030530275</h2>
+        <h4 style="text-align: center;">Vaibhav Shinde</h4>
+        <p style="text-align: center;">vaibhav@techfest.org</p>
+        <p style="text-align: center;">7030530275</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/kushal.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Kushal Verma</h1>
-        <h2 style="text-align: center;">kushal@techfest.org</h2>
-        <h2 style="text-align: center;">9082401361</h2>
+        <h4 style="text-align: center;">Kushal Verma</h4>
+        <p style="text-align: center;">kushal@techfest.org</p>
+        <p style="text-align: center;">9082401361</p>
     </div>
 <div class="head-c">
- Web and Creatives
+    <h3>Web and Creatives</h3>
 </div>
 
 
     <div class="card" >
         <img src="/2019/contactus/ansh.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Ansh Shah</h1>
-        <h2 style="text-align: center;">ansh.shah@techfest.org</h2>
-        <h2 style="text-align: center;">9664742683</h2>
+        <h4 style="text-align: center;">Ansh Shah</h4>
+        <p style="text-align: center;">ansh.shah@techfest.org</p>
+        <p style="text-align: center;">9664742683</p>
     </div>
 <a href="http://beta.techfest.org">
     <div class="card">
         <img src="/2019/contactus/paras.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Paras Jain</h1>
-        <h2 style="text-align: center;">paras@techfest.org</h2>
-        <h2 style="text-align: center;">7700901992</h2>
+        <h4 style="text-align: center;">Paras Jain</h4>
+        <p style="text-align: center;">paras@techfest.org</p>
+        <p style="text-align: center;">7700901992</p>
     </div>
 </a>
 
@@ -173,150 +173,114 @@
 
 
 <div class="head-c">
-    Competitions & Ideate
+    <h3>Competitions & Ideate</h3>
 </div>
 
     <div class="card">
         <img src="/2019/contactus/om.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Om Jaiswal</h1>
-        <h2 style="text-align: center;">omjaiswal@techfest.org</h2>
-        <h2 style="text-align: center;">7400400933</h2>
+        <h4 style="text-align: center;">Om Jaiswal</h4>
+        <p style="text-align: center;">omjaiswal@techfest.org</p>
+        <p style="text-align: center;">7400400933</p>
     </div>
     <div class="card" >
         <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Abhinav Kumar</h1>
-        <h2 style="text-align: center;">abhinav@techfest.org</h2>
-        <h2 style="text-align: center;">8299544527</h2>
+        <h4 style="text-align: center;">Abhinav Kumar</h4>
+        <p style="text-align: center;">abhinav@techfest.org</p>
+        <p style="text-align: center;">8299544527</p>
     </div>
     <div class="card" style="margin: 2% 29% 2% 29%;" >
         <img src="/2019/contactus/manjeet.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Manjeet Singh</h1>
-        <h2 style="text-align: center;">manjeet@techfest.org</h2>
-        <h2 style="text-align: center;">7568387238</h2>
+        <h4 style="text-align: center;">Manjeet Singh</h4>
+        <p style="text-align: center;">manjeet@techfest.org</p>
+        <p style="text-align: center;">7568387238</p>
     </div>
 
 <div class="head-c">
-    Exhibitions
+    <h3>Exhibitions</h3>
 </div>
 
 
     <div class="card" >
         <img src="/2019/contactus/sachit.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Sachit Shanbhag</h1>
-        <h2 style="text-align: center;">sachit@techfest.org</h2>
-        <h2 style="text-align: center;">9967235914</h2>
+        <h4 style="text-align: center;">Sachit Shanbhag</h4>
+        <p style="text-align: center;">sachit@techfest.org</p>
+        <p style="text-align: center;">9967235914</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/abhyuday.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Abhyuday Chauhan</h1>
-        <h2 style="text-align: center;">abhyuday@techfest.org</h2>
-        <h2 style="text-align: center;">7700901981</h2>
+        <h4 style="text-align: center;">Abhyuday Chauhan</h4>
+        <p style="text-align: center;">abhyuday@techfest.org</p>
+        <p style="text-align: center;">7700901981</p>
     </div>
 
 <div class="head-c">
-    Technoholix
+    <h3>Technoholix</h3>
 </div>
 
 
 
     <div class="card" >
         <img src="/2019/contactus/muztaba.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Syed Muztaba Ali</h1>
-        <h2 style="text-align: center;">muztaba@techfest.org</h2>
-        <h2 style="text-align: center;">7980868943</h2>
+        <h4 style="text-align: center;">Syed Muztaba Ali</h4>
+        <p style="text-align: center;">muztaba@techfest.org</p>
+        <p style="text-align: center;">7980868943</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/adamya.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Adamya Gupta</h1>
-        <h2 style="text-align: center;">adamya@techfest.org</h2>
-        <h2 style="text-align: center;">9833958399</h2>
+        <h4 style="text-align: center;">Adamya Gupta</h4>
+        <p style="text-align: center;">adamya@techfest.org</p>
+        <p style="text-align: center;">9833958399</p>
     </div>
 
 <div class="head-c">
-    Lectures
+    <h3>Lectures</h3>
 </div>
 
 
 <div class="card" style="margin: 2% 29% 2% 29%;" >
     <img src="/2019/contactus/naman.jpg" alt="" style="width: 100%">
-    <h1 style="text-align: center;">Naman Agarwal</h1>
-    <h2 style="text-align: center;">naman@techfest.org</h2>
-    <h2 style="text-align: center;">7700906731</h2>
+    <h4 style="text-align: center;">Naman Agarwal</h4>
+    <p style="text-align: center;">naman@techfest.org</p>
+    <p style="text-align: center;">7700906731</p>
 </div>
 
 <div class="head-c">
-    Robowars
+    <h3>Robowars</h3>
 </div>
 
 
 
     <div class="card" >
         <img src="/2019/contactus/akshat.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Akshat Johri</h1>
-        <h2 style="text-align: center;">akshat@techfest.org</h2>
-        <h2 style="text-align: center;">9892897448</h2>
+        <h4 style="text-align: center;">Akshat Johri</h4>
+        <p style="text-align: center;">akshat@techfest.org</p>
+        <p style="text-align: center;">9892897448</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/vibhav.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Vibhav Bhargava</h1>
-        <h2 style="text-align: center;">vibhav@techfest.org</h2>
-        <h2 style="text-align: center;">9827323969</h2>
+        <h4 style="text-align: center;">Vibhav Bhargava</h4>
+        <p style="text-align: center;">vibhav@techfest.org</p>
+        <p style="text-align: center;">9827323969</p>
     </div>
 
 
 <div class="head-c">
-    Ozone
+    <h3>Ozone</h3>
 </div>
 
 
     <div class="card" >
         <img src="/2019/contactus/prateek.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Prateek Mohanani</h1>
-        <h2 style="text-align: center;">prateek@techfest.org</h2>
-        <h2 style="text-align: center;">7045409458</h2>
+        <h4 style="text-align: center;">Prateek Mohanani</h4>
+        <p style="text-align: center;">prateek@techfest.org</p>
+        <p style="text-align: center;">7045409458</p>
     </div>
     <div class="card">
         <img src="/2019/contactus/prafull.jpg" alt="" style="width: 100%">
-        <h1 style="text-align: center;">Prafull Gupta</h1>
-        <h2 style="text-align: center;">prafull@techfest.org</h2>
-        <h2 style="text-align: center;">7985743808</h2>
+        <h4 style="text-align: center;">Prafull Gupta</h4>
+        <p style="text-align: center;">prafull@techfest.org</p>
+        <p style="text-align: center;">7985743808</p>
     </div>
 
-{{--    <div class="card" >--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
-{{--    <div class="card">--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
-{{--    <div class="card" >--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
-{{--    <div class="card">--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
-{{--    <div class="card" >--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
-{{--    <div class="card">--}}
-{{--        <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">--}}
-{{--        <h1 style="text-align: center;">Abhinav Kumar</h1>--}}
-{{--        <h2 style="text-align: center;">abhinav@techfest.org</h2>--}}
-{{--        <h2 style="text-align: center;">7700901992</h2>--}}
-{{--    </div>--}}
 
 </body>

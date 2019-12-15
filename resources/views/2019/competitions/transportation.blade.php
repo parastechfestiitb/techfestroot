@@ -720,8 +720,8 @@
 <script>
     function myFunction2_1() {
         document.getElementById("text_change").innerHTML = "<br>" +
-            "Late Date of Registration-9th December 2019 \n" +
-            "            <br>Final Project Report Submission-10th December 2019\n" +
+            "Late Date of Registration-12th December 2019 \n" +
+            "            <br>Final Project Report Submission-12th December 2019\n" +
             "            <br>Declaration of Result-13th December 2019\n"+
             "            <br>Final presentation & video submission-20th December\n" +
             "            <br>Improvisation Stage-14th December 2019 to 2nd Jan 2020\n" +
@@ -771,7 +771,7 @@
 
 <script>
     function myFunction4() {
-        document.getElementById("text_change").innerHTML = "<br>Nadeem<br>nadeemshaikh4347@gmail.com<br><br> ";
+        document.getElementById("text_change").innerHTML = "<br>Nadeem<br> +919326337472 <br>nadeemshaikh4347@gmail.com<br><br> ";
     }
 </script>
 <style>

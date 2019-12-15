@@ -608,7 +608,7 @@ Route::get('/summit', function () {return view('2019.summit.all_summit');});
 Route::get('/mediasummit', function () {return view('2019.summit.mediasummit');});
 Route::post('/summit_post', 'webpagesController@summit_post');
 
-Route::get('/esports', 'MainController@esports');
+Route::redirect('/esports', '/gamersleague');
 
 //Route::get('/workshops', 'MainController@workshops');
 Route::redirect('/workshop', '/workshops');
@@ -738,6 +738,7 @@ Route::get('/m/contact-us', function () {return view('2019.m_contactus');});
 Route::get('/cyclothon', function () {return view('2019.cyclothon');});
 
 
+Route::redirect('/jacket', '/');
 
 
 

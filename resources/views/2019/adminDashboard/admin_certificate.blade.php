@@ -43,7 +43,7 @@
                                             <td class="th-sm">{{$i->name}}</td>
                                             <td class="th-sm">{{$i->email}}</td>
                                             <?php
-                                            $Certificate_row = DB::table('certificates')->where(['id'=>$i->cerificate_id])->first();
+                                            $Certificate_row = DB::table('certificates')->where(['id'=>$i->certificate_id])->first();
                                             $random_text = "K7lxDTZLUvAFm6noUG7O";
                                             $url = md5($i->id.$random_text);
                                             ?>
