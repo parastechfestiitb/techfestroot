@@ -241,6 +241,7 @@
                             <a href="https://www.justexam.in/"><img title="Portal Partner" src="/2019/ic/exam.png" alt="" style="max-height: 60px; margin: auto"></a>
                             <h1 class="text-white text-uppercase mb-10">INNOVATION CHALLENGE</h1>
                             <p class="text-white mb-30" style="font-size:1.1em;"><span class="text-white-50">Brought to you by</span > Techfest 2019-20, IIT Bombay<br><br><br><span class="text-white-50">In collaboration with Unified Council</span></p>
+                            <p class="text-white mb-30" style="font-size:1.1em;">Zone 4 Exam is live now</p>
                             <a href="/innovationchallenge/login" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Login</span></a>
                             <a href="/innovationchallenge/register" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Register</span></a>
 {{--                            <p class="primary-btn ml-2 d-inline-flex align-items-center" id="signinButton" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Login/Register</span></p>--}}
@@ -560,15 +561,15 @@
                             <h6 class="title">Contact Us</h6>
                             <div class="row gg">
                                 <div class="col-sm-6" style=" color: white;font-size: 19px;text-align: center;">
-                                    <b>Abhyuday Chauhan</b><br>+91 7700901981<br>
-                                    <a href="mailto:abhyuday@techfest.org" style="text-decoration: none;">
-                                        <p style="text-align: center;font-size: 19px ; margin-top: 14px;">abhyuday@techfest.org</p>
+                                    <b>Kalpesh Rathi</b><br>+91 9822206611<br>
+                                    <a href="mailto:kalpeshrathi04@gmail.com" style="text-decoration: none;">
+                                        <p style="text-align: center;font-size: 19px ; margin-top: 14px;">kalpeshrathi04@gmail.com</p>
                                     </a>
                                 </div>
-                                <div class="col-sm-6" style="font-size: 19px;text-align: center;">
-                                    <b>Prafull Gupta</b><br>+91 7985743808<br>
-                                    <a href="mailto:prafull@techfest.org" style="text-decoration: none;">
-                                        <p style="text-align: center;font-size: 19px ; margin-top: 14px;">prafull@techfest.org</p>
+                                <div class="col-sm-6" style=" color: white;font-size: 19px;text-align: center;">
+                                    <b>Rohit Karandikar</b><br>+91 97698 89950<br>
+                                    <a href="mailto:rohitk1701@gmail.com" style="text-decoration: none;">
+                                        <p style="text-align: center;font-size: 19px ; margin-top: 14px;">rohitk1701@gmail.com</p>
                                     </a>
                                 </div>
                                 <div class="col-sm-12">

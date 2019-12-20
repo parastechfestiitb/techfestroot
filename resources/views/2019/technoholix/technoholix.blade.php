@@ -3,6 +3,8 @@
 <head>
     <title>Techfest</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/2019/ca/images/favicon_logo.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
@@ -103,7 +105,7 @@
 {{--                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>--}}
 {{--                <li class="nav-item"><a href="#Offline-section" class="nav-link"><span>Print Coverage</span></a></li>--}}
 {{--                <li class="nav-item"><a href="#tv-section" class="nav-link"><span>TV Coverage</span></a></li>--}}
-                <li class="nav-item"><a href="#contact-us" class="nav-link"><span>Contact Us</span></a></li>
+{{--                <li class="nav-item"><a href="#contact-us" class="nav-link"><span>Contact Us</span></a></li>--}}
 
             </ul>
         </div>
@@ -290,7 +292,7 @@
 
             .pop-up {
                 position: fixed;
-                margin: 5% auto;
+                margin: 10% auto;
                 left: 0;
                 right: 0;
                 z-index: 2;
@@ -328,7 +330,7 @@
                 background-color: #FF9980;
                 padding: 1.5px 7px;
                 right: 0;
-                z-index: 2;
+                z-index: 40;
                 margin-right: -10px;
                 margin-top: -9px;
                 border-radius: 50%;
@@ -342,6 +344,7 @@
             .close-button:hover {
                 background-color: tomato;
                 color: #fff;
+                z-index: 40;
             }
         </style>
         <style>
@@ -583,8 +586,24 @@
 
         </style>
         <div class="row pop-up " >
+
             <div class="box small-6 large-centered " style="border-radius: 10px; ">
-                <p style="margin: 0;padding: 2%">Register to get free passes</p>
+                <div style="z-index: 10;">
+                    <a href="#" class="close-button" style="z-index: 40">&#10006;</a>
+                </div>
+
+                @if($errors->any())
+
+                    <div class="main-title " style="text-align: center;">
+                        <p style="margin: 0;padding: 2%"><strong> Thanks for registering! You will get an invitation mail within 24 hours.</strong></p>
+                    </div>
+                    {{--                {{$errors->first()}}--}}
+
+                @endif
+                @if(!$errors->any())<p style="margin: 0;padding: 2%">Register here to get free passes<br>Date: 5th January , Gymkhana Grounds , IIT Bombay</p>
+
+
+
                 <div class="wrapper3">
                     <ul class="bg-bubbles">
                         <li></li>
@@ -600,16 +619,17 @@
                     </ul>
                 </div>
                 <div style="padding: 5%">
-                    <a href="#" class="close-button">&#10006;</a>
                     <div class="container3">
                         <!--                        <h4>To register for Technoholix register here</h4>-->
                         <form action="/technoholix/post"  method="post">
                             {{csrf_field()}}
-                            <input type="text" name="name" placeholder="Name" >
-                            <input type="email" name="email" placeholder="Email" >
-                            <input type="text" name="college_institute" placeholder="College Institute" >
-                            <input type="text" name="city" placeholder="City" >
-                            <input type="text" name="age" placeholder="Age" >
+                            <span>
+                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </span>
+                            <input type="text" name="college_institute" placeholder="College Institute" required>
+                            <input type="text" name="city" placeholder="City" required>
+                            <input type="text" name="age" placeholder="Age" required>
                             <button type="submit" id="login-button">Submit</button>
                         </form>
                     </div>
@@ -618,6 +638,7 @@
 
 
                 <br>
+                @endif
             </div>
         </div>
         <div class="overlay"></div>
@@ -629,7 +650,7 @@
                             <span>technoholix</span>
                         </div>
                         <h1 class="mb-4">technoholix</h1>
-                        <p>Where The Worlds Of Technology And The Arts Collide</p>
+                        <p>Where the Worlds of Technology and Art Collide</p>
                     </div>
                 </div>
             </div>
@@ -639,11 +660,8 @@
 
 </section>
 
-<section style="background-color: black" class="ftco-section ftco-no-pt ftco-no-pb ftco-about-section" id="about-section">
-    <br>
-    <div class="arrow1 col-md-4" style="padding: 0% 0% 0% 9%; position: relative; clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);background-color: white;  background-repeat: no-repeat;">
-        <h2 style="opacity: 1; text-align: left;">About Technoholix</h2>
-    </div>
+<section style="background-color: black;padding-bottom: 0;" class="ftco-section ftco-no-pt ftco-about-section" id="about-section" >
+
         <div class="container-fluid px-0">
         <div class="row d-md-flex text-wrapper">
             <div class="one-half img" >
@@ -651,8 +669,8 @@
             </div>
             <div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
                 <div class="text-inner pl-md-5">
-                    <h3 class="heading">What Is Technoholix?</h3>
-                    <p>Techfest brings to you Technoholix: our techno-cultural nights where Science becomes entertainment and where Technology becomes an art! Over 3 days, Technoholix hosts a plethora of events like EDM nights, Laser shows, UV light shows, Tron dances, Acrobatics and even Virtual 3D holographic displays for an ecstatic audience of over 20,000. So relax your mind, rest your muscles, buckle up for a thrilling ride and feast your eyes on the unique utopia of entertainment which is Technoholix!</p>
+                    <h3 class="heading" style="color: white">What Is Technoholix?</h3>
+                    <p style="color: white">Techfest brings to you Technoholix: our techno-cultural nights where Science becomes entertainment and where Technology becomes an art! Over 3 days, Technoholix hosts a plethora of events like EDM nights, Laser shows, UV light shows, Tron dances, Acrobatics and even Virtual 3D holographic displays for an ecstatic audience of over 20,000. So relax your mind, rest your muscles, buckle up for a thrilling ride and feast your eyes on the unique utopia of entertainment which is Technoholix!</p>
 
                 </div>
             </div>
@@ -660,15 +678,13 @@
     </div>
 </section>
 
-
 <!-- gallery_part part start-->
-<section class="gallery_part" style="background-color: black">
+<section class="gallery_part" style="background-color: black;padding-top: 0px">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xl-5">
                 <div class="section_tittle text-center">
-                    <h4>The Gallery</h4>
-                    <h2>Those Who Graced Our Stage</h2>
+                    <h2 style="color: white">Those Who Graced Our Stage</h2>
                 </div>
             </div>
         </div>
@@ -723,7 +739,7 @@
                             <div class="single_gallery_item">
                                 <div class="single_gallery_item_iner">
                                     <div class="gallery_item_text">
-                                        <h3>M4Sonice</h3>
+                                        <h3>M4Sonic</h3>
                                         <p style="padding-left: 20px; padding-right: 20px">Best Launchpad Artist in the World from Australia</p>
                                     </div>
                                 </div>
@@ -766,89 +782,89 @@
     </div>
 </section>
 <!-- gallery_part part end-->
-<div id="colorlib-page">
-    <div id="colorlib-main">
-        <div class="colorlib-about">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10 animate-box" data-animate-effect="fadeInLeft">
-                        <div class="about-desc">
-                            <span class="heading-meta">Techx Policies</span>
-                            <h3>Privacy Policy for Techfest, IIT Bombay</h3>
-                            <p>At Techfest | Asia's Largest Science and Technology Festival, accessible from techfest.org,
-                                one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and
-                                recorded by Techfest | Asia's Largest Science and Technology Festival and how we use it.</p>							</div>
-                        <div class="fancy-collapse-panel">
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Details</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            <ul style="list-style-type:circle;">
-                                                <li>Gymkhana Night: PASSES ARE FREE OF COST !</li>
-                                                <li>Direct entry will be given to students with IITB identity card or valid accommodation identity during festival.</li>
-                                                <li>No entry will be given without a hardcopy of the pass</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Regulations</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            <p>Following materials are prohibited and will not be allowed into the venue:</p>
-                                            <ul style="list-style-type:circle;">
-                                                <li>Weapons, explosives, firearms, glass bottles, aluminum cans, hazardous and breakable materials</li>
-                                                <li>Fireworks, lasers, flashlights and anything else that can interfere with the artists</li>
-                                                <li>Alcohol, food, bottles, cans, glass, animals and sound systems may NOT be brought onto the festival site</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Passes</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">
-                                            <p>COMING SOON</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingFour">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">FAQ</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                        <div class="panel-body">
-                                            <h5>Are backpacks allowed inside?</h5>
-                                            <p>No</p>
-                                            <h5>Where do I carry my belongings?</h5>
-                                            <p>Only Sling bags and ladies' bags are allowed inside.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div id="colorlib-page">--}}
+{{--    <div id="colorlib-main">--}}
+{{--        <div class="colorlib-about">--}}
+{{--            <div class="container-fluid">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-md-1"></div>--}}
+{{--                    <div class="col-md-10 animate-box" data-animate-effect="fadeInLeft">--}}
+{{--                        <div class="about-desc">--}}
+{{--                            <span class="heading-meta">Techx Policies</span>--}}
+{{--                            <h3>Privacy Policy for Techfest, IIT Bombay</h3>--}}
+{{--                            <p>At Techfest | Asia's Largest Science and Technology Festival, accessible from techfest.org,--}}
+{{--                                one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and--}}
+{{--                                recorded by Techfest | Asia's Largest Science and Technology Festival and how we use it.</p>							</div>--}}
+{{--                        <div class="fancy-collapse-panel">--}}
+{{--                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">--}}
+{{--                                <div class="panel panel-default">--}}
+{{--                                    <div class="panel-heading" role="tab" id="headingOne">--}}
+{{--                                        <h4 class="panel-title">--}}
+{{--                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Details</a>--}}
+{{--                                        </h4>--}}
+{{--                                    </div>--}}
+{{--                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">--}}
+{{--                                        <div class="panel-body">--}}
+{{--                                            <ul style="list-style-type:circle;">--}}
+{{--                                                <li>Gymkhana Night: PASSES ARE FREE OF COST !</li>--}}
+{{--                                                <li>Direct entry will be given to students with IITB identity card or valid accommodation identity during festival.</li>--}}
+{{--                                                <li>No entry will be given without a hardcopy of the pass</li>--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="panel panel-default">--}}
+{{--                                    <div class="panel-heading" role="tab" id="headingTwo">--}}
+{{--                                        <h4 class="panel-title">--}}
+{{--                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Regulations</a>--}}
+{{--                                        </h4>--}}
+{{--                                    </div>--}}
+{{--                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">--}}
+{{--                                        <div class="panel-body">--}}
+{{--                                            <p>Following materials are prohibited and will not be allowed into the venue:</p>--}}
+{{--                                            <ul style="list-style-type:circle;">--}}
+{{--                                                <li>Weapons, explosives, firearms, glass bottles, aluminum cans, hazardous and breakable materials</li>--}}
+{{--                                                <li>Fireworks, lasers, flashlights and anything else that can interfere with the artists</li>--}}
+{{--                                                <li>Alcohol, food, bottles, cans, glass, animals and sound systems may NOT be brought onto the festival site</li>--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="panel panel-default">--}}
+{{--                                    <div class="panel-heading" role="tab" id="headingThree">--}}
+{{--                                        <h4 class="panel-title">--}}
+{{--                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Passes</a>--}}
+{{--                                        </h4>--}}
+{{--                                    </div>--}}
+{{--                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">--}}
+{{--                                        <div class="panel-body">--}}
+{{--                                            <p>COMING SOON</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="panel panel-default">--}}
+{{--                                    <div class="panel-heading" role="tab" id="headingFour">--}}
+{{--                                        <h4 class="panel-title">--}}
+{{--                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">FAQ</a>--}}
+{{--                                        </h4>--}}
+{{--                                    </div>--}}
+{{--                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">--}}
+{{--                                        <div class="panel-body">--}}
+{{--                                            <h5>Are backpacks allowed inside?</h5>--}}
+{{--                                            <p>No</p>--}}
+{{--                                            <h5>Where do I carry my belongings?</h5>--}}
+{{--                                            <p>Only Sling bags and ladies' bags are allowed inside.</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 
 

@@ -454,6 +454,17 @@
         ?>
         {{--        <div class="title">Your Exam Credentials</div>--}}
         <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <h2 style="text-align: center;">INNOVATION CHALLENGE 2019-20</h2>
+
+                <h4 style="text-align: center;">The portal for online submission will remain open on 19 December from 2 pm to 8 pm. To start the online submission click the button below  </h4>
+
+                    <form action="/innovationchallenge/exam/post" method="post" style="text-align: center;">
+                        @csrf
+                        <input type="hidden" name="roll_number" value="{{$zone_coeff}}{{$user_row->id}}">
+                        <input style="background-color: #4ed2d8" class="btn" type="submit" value="Click here to continue">
+                    </form>
+            </div>
             <div class="col-md-4">
                 <div class="input">
                     <p>Name</p>
@@ -500,7 +511,7 @@
         <div class="row">
             <div>
                 <br>
-                <h2 style="text-align: center;">INNOVATION CHALLENGE 2019-20</h2>
+
                 <br>
                 <p style="text-align: center;">PROBLEM STATEMENT - WATER CRISIS</p>
                 <br>
@@ -536,126 +547,126 @@
 
     </section>
     <script>
-   $(function() {
+        $(function() {
 
-   $(".input input").focus(function() {
+            $(".input input").focus(function() {
 
-      $(this).parent(".input").each(function() {
-         $("label", this).css({
-            "line-height": "18px",
-            "font-size": "18px",
-            "font-weight": "100",
-            "top": "0px"
-         })
-         $(".spin", this).css({
-            "width": "100%"
-         })
-      });
-   }).blur(function() {
-      $(".spin").css({
-         "width": "0px"
-      })
-      if ($(this).val() == "") {
-         $(this).parent(".input").each(function() {
-            $("label", this).css({
-               "line-height": "60px",
-               "font-size": "24px",
-               "font-weight": "300",
-               "top": "10px"
-            })
-         });
+                $(this).parent(".input").each(function() {
+                    $("label", this).css({
+                        "line-height": "18px",
+                        "font-size": "18px",
+                        "font-weight": "100",
+                        "top": "0px"
+                    })
+                    $(".spin", this).css({
+                        "width": "100%"
+                    })
+                });
+            }).blur(function() {
+                $(".spin").css({
+                    "width": "0px"
+                })
+                if ($(this).val() == "") {
+                    $(this).parent(".input").each(function() {
+                        $("label", this).css({
+                            "line-height": "60px",
+                            "font-size": "24px",
+                            "font-weight": "300",
+                            "top": "10px"
+                        })
+                    });
 
-      }
-   });
+                }
+            });
 
-   $(".button").click(function(e) {
-      var pX = e.pageX,
-         pY = e.pageY,
-         oX = parseInt($(this).offset().left),
-         oY = parseInt($(this).offset().top);
+            $(".button").click(function(e) {
+                var pX = e.pageX,
+                    pY = e.pageY,
+                    oX = parseInt($(this).offset().left),
+                    oY = parseInt($(this).offset().top);
 
-      $(this).append('<span class="click-efect x-' + oX + ' y-' + oY + '" style="margin-left:' + (pX - oX) + 'px;margin-top:' + (pY - oY) + 'px;"></span>')
-      $('.x-' + oX + '.y-' + oY + '').animate({
-         "width": "500px",
-         "height": "500px",
-         "top": "-250px",
-         "left": "-250px",
+                $(this).append('<span class="click-efect x-' + oX + ' y-' + oY + '" style="margin-left:' + (pX - oX) + 'px;margin-top:' + (pY - oY) + 'px;"></span>')
+                $('.x-' + oX + '.y-' + oY + '').animate({
+                    "width": "500px",
+                    "height": "500px",
+                    "top": "-250px",
+                    "left": "-250px",
 
-      }, 600);
-      $("button", this).addClass('active');
-   })
-
-   $(".alt-2").click(function() {
-      if (!$(this).hasClass('material-button')) {
-         $(".shape").css({
-            "width": "100%",
-            "height": "100%",
-            "transform": "rotate(0deg)"
-         })
-
-         setTimeout(function() {
-            $(".overbox").css({
-               "overflow": "initial"
-            })
-         }, 600)
-
-         $(this).animate({
-            "width": "140px",
-            "height": "140px"
-         }, 500, function() {
-            $(".box").removeClass("back");
-
-            $(this).removeClass('active')
-         });
-
-         $(".overbox .title").fadeOut(300);
-         $(".overbox .input").fadeOut(300);
-         $(".overbox .button").fadeOut(300);
-
-         $(".alt-2").addClass('material-buton');
-      }
-
-   })
-
-   $(".material-button").click(function() {
-
-      if ($(this).hasClass('material-button')) {
-         setTimeout(function() {
-            $(".overbox").css({
-               "overflow": "hidden"
-            })
-            $(".box").addClass("back");
-         }, 200)
-         $(this).addClass('active').animate({
-            "width": "700px",
-            "height": "700px"
-         });
-
-         setTimeout(function() {
-            $(".shape").css({
-               "width": "50%",
-               "height": "50%",
-               "transform": "rotate(45deg)"
+                }, 600);
+                $("button", this).addClass('active');
             })
 
-            $(".overbox .title").fadeIn(300);
-            $(".overbox .input").fadeIn(300);
-            $(".overbox .button").fadeIn(300);
-         }, 700)
+            $(".alt-2").click(function() {
+                if (!$(this).hasClass('material-button')) {
+                    $(".shape").css({
+                        "width": "100%",
+                        "height": "100%",
+                        "transform": "rotate(0deg)"
+                    })
 
-         $(this).removeClass('material-button');
+                    setTimeout(function() {
+                        $(".overbox").css({
+                            "overflow": "initial"
+                        })
+                    }, 600)
 
-      }
+                    $(this).animate({
+                        "width": "140px",
+                        "height": "140px"
+                    }, 500, function() {
+                        $(".box").removeClass("back");
 
-      if ($(".alt-2").hasClass('material-buton')) {
-         $(".alt-2").removeClass('material-buton');
-         $(".alt-2").addClass('material-button');
-      }
+                        $(this).removeClass('active')
+                    });
 
-   });
+                    $(".overbox .title").fadeOut(300);
+                    $(".overbox .input").fadeOut(300);
+                    $(".overbox .button").fadeOut(300);
 
-});
-</script>
+                    $(".alt-2").addClass('material-buton');
+                }
+
+            })
+
+            $(".material-button").click(function() {
+
+                if ($(this).hasClass('material-button')) {
+                    setTimeout(function() {
+                        $(".overbox").css({
+                            "overflow": "hidden"
+                        })
+                        $(".box").addClass("back");
+                    }, 200)
+                    $(this).addClass('active').animate({
+                        "width": "700px",
+                        "height": "700px"
+                    });
+
+                    setTimeout(function() {
+                        $(".shape").css({
+                            "width": "50%",
+                            "height": "50%",
+                            "transform": "rotate(45deg)"
+                        })
+
+                        $(".overbox .title").fadeIn(300);
+                        $(".overbox .input").fadeIn(300);
+                        $(".overbox .button").fadeIn(300);
+                    }, 700)
+
+                    $(this).removeClass('material-button');
+
+                }
+
+                if ($(".alt-2").hasClass('material-buton')) {
+                    $(".alt-2").removeClass('material-buton');
+                    $(".alt-2").addClass('material-button');
+                }
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

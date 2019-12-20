@@ -28,7 +28,7 @@ Route::get('/app2', function () {return view('2019.app.app');});
 //Route::get('/m/segreta', function () {return view('2019.segrita.m_segrita');});
 
 Route::prefix('/admin')->name('admin.')->group(function () {
-    Route::get('/technoholix', 'Admin\DatabaseController@techx');
+//    Route::get('/technoholix', 'Admin\DatabaseController@techx');
     Route::get('/lolg', 'PaymentController@addPayment');
     Route::post('/lolg', 'PaymentController@postPayment');
     Route::prefix('/certificate-last')->group(function () {
@@ -707,8 +707,8 @@ Route::get('/fullthrottle', function () {return view('2019.ift.ift');});
 Route::get('/ift/form', function () {return view('2019.ift.ift_form');});
 Route::post('/ift/form', 'webpagesController@ift_form_reg');
 
-Route::get('/technoholix', 'MainController@technoholix');
-Route::get('/technoholix2', function () {return view('2019.technoholix.technoholix');});
+Route::get('/technoholix',  'webpagesController@technoholix');
+//Route::get('/technoholix2', function () {return view('2019.technoholix.technoholix');});
 Route::post('/technoholix/post', 'webpagesController@technoholix_reg');
 //Route::get('/workshops', 'MainController@workshops');
 Route::get('/media', function () {return view('2019.media');});
@@ -907,11 +907,15 @@ Route::get('/innovationchallenge/register', 'EventController@icLogin');
 Route::get('/innovationchallenge/login', 'EventController@ic_password_Login');
 Route::post('/innovationchallenge/login/success', 'EventController@ic_Login_success');
 Route::post('/innovationchallenge/post', 'EventController@ic_reg');
+Route::post('/innovationchallenge/exam/post', 'EventController@exam');
 
+Route::redirect('/aiflt', '/initiatives/financial_literacy/test');
 Route::get('/initiatives/financial_literacy/test', 'EventController@finlitGet');
 Route::post('/initiatives/financial_literacy/test', 'EventController@finlitGet');
-Route::get('/initiatives/financial_literacy/login', 'EventController@finlitLogin');
+Route::get('/initiatives/financial_literacy/register', 'EventController@finlitregister');
 Route::post('/initiatives/financial_literacy/post', 'EventController@finlit_reg');
+Route::get('/initiatives/financial_literacy/login', 'EventController@finlitlogin');
+Route::post('/initiatives/financial_literacy/login/success', 'EventController@finlitlogin_success');
 
 
 //Route::get('/cyclothon', 'EventController@cyclothonGet');

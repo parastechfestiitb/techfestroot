@@ -1280,9 +1280,9 @@
             <div class="col-md   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
                 <img src="/2019/summit/images/sbi.png" alt="" style="width: 100%">
             </div>
-            <div class="col-md ftco-animate" style="margin-top: auto; margin-bottom: auto;">
-                <img src="/2019/summit/mahindra.png" alt="" style="width: 100%">
-            </div>
+{{--            <div class="col-md ftco-animate" style="margin-top: auto; margin-bottom: auto;">--}}
+{{--                <img src="/2019/summit/mahindra.png" alt="" style="width: 100%">--}}
+{{--            </div>--}}
         </div>
     </div>
 </section>

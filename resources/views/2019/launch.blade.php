@@ -519,7 +519,7 @@
 
                             </p>
                             <a href="https://www.youtube.com/watch?v=jZt53MjhiX4" title="Official Aftermovie">
-                                <img src="/2019/homepage/images/aftermovie.jpg" alt="" style="height: 30.5vh; width: auto; position: absolute; bottom: 13.8vh;">
+                                <img src="/2019/homepage/aftermovie.png" alt="" style="height: 30.5vh; width: auto; position: absolute; bottom: 13.8vh;">
 
                             </a>
                             {{--                            <iframe style="height: 30.7vh; width: 37vw;"  src="https://www.youtube.com/embed/2z3CEBv8PLI?start=160;autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}

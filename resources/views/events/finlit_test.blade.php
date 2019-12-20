@@ -395,8 +395,8 @@
         body {
             background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
             /*background-position: center;*/
-            background-size: cover;
-            background-repeat: no-repeat;
+            /*background-size: cover;*/
+            /*background-repeat: no-repeat;*/
             min-height: 100vh;
             font-family: 'Roboto', sans-serif;
             overflow-y: scroll;
@@ -404,7 +404,7 @@
 
         body,
         html {
-            overflow: scroll;
+            /*overflow: scroll;*/
         }
 
         .materialContainer {
@@ -447,12 +447,17 @@
             <span class="spin"></span>
         </div>
         <div class="input">
+            <p>Roll Number</p>
+            <label for="rollnumber">FINLIT{{$user_row->id}}</label>
+            <span class="spin"></span>
+        </div>
+        <div class="input">
             <p>Email</p>
             <label for="name">{{$data->email}}</label>
             <span class="spin"></span>
         </div>
         <div class="input">
-            <p for="name">Roll number and Password has been mailed to your registered email address</p>
+            <p for="name">Roll number and Password will mailed to your registered email address within 24 hours</p>
             <span class="spin"></span>
         </div>
         <div>

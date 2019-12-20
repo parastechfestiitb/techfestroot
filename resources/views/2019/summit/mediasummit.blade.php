@@ -1085,7 +1085,7 @@
                                             <div class="card-body" style="overflow-y: auto">
                                                 <h4 class="card-title">Students</h4>
                                                 <hr>
-                                                <h5>INR 800/-</h5>
+                                                <h5>INR 100/-</h5>
                                                 <p class="card-text">
                                                 <li>Must carry a valid ID Card</li>
                                                 <li>Panel Discussion</li>
@@ -1106,7 +1106,7 @@
                                             <div class="card-body" style="overflow-y: auto">
                                                 <h4 class="card-title">Professionals</h4>
                                                 <hr>
-                                                <h5>INR 1000/-</h5>
+                                                <h5>INR 100/-</h5>
                                                 <p class="card-text">
                                                 <li>Must carry a valid ID Card</li>
                                                 <li>VIP entry to Exhibitions on 3rd day</li>
@@ -1264,14 +1264,20 @@
                     <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
                         <img src="/2019/summit/adobe.jpg" alt="" style="width: 47%; max-height: 200px">
                     </div>
-                    {{--            <div class="col-xs-6 col-md-3   ftco-animate">--}}
-                    {{--                <img src="/2019/summit/twitter.png" alt="" style="width: 100%">--}}
-                    {{--            </div>--}}
+                    <div class="col-xs-6 col-md-3   ftco-animate" style="margin: auto">
+                        <img src="/2019/summit/thelogical.png" alt="" style="width: 100%; margin: auto">
+                    </div>
                     <div class="col-xs-6 col-md-4   ftco-animate">
                         <img src="/2019/summit/images/sbi.png" alt="" style="width: 100%">
                     </div>
                     <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
                         <img src="/2019/summit/images/orgs.png" alt="" style="width: 80%; ">
+                    </div>
+                    <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;background-color: white" >
+                        <img src="/2019/summit/inshorts.png" alt="" style="width: 80%; ">
+                    </div>
+                    <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
+                        <img src="/2019/summit/red.jpg" alt="" style="width: 80%; ">
                     </div>
 
                 </div>

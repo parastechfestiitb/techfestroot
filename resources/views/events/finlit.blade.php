@@ -231,8 +231,8 @@
 {{--                            <img src="/2019/initiatives/financial_literacy/tflogoblue.jpg" alt="" style="max-height: 60px; margin: auto">--}}
 {{--                            <img src="/2019/initiatives/financial_literacy/iunderstand.png" alt="" style="max-height: 60px; margin: auto">--}}
                             <h1 class="text-white text-uppercase mb-10">All India Financial Literacy Test (AIFLT)</h1>
-                            <p class="text-white mb-30" style="font-size:1.1em;">All India Financial Literacy Test brought to you by Techfest 2019-20 and National Institute of Securities Markets, Login/Registration button (which redirects them to the registration form)</p>
-                            <a href="/initiatives/financial_literacy/login" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Register</span></a>
+                            <p class="text-white mb-30" style="font-size:1.1em;">All India Financial Literacy Test brought to you by Techfest 2019-20 and National Institute of Securities Markets, To Register, Click on the button below and fill the registration form</p>
+                            <a href="/initiatives/financial_literacy/register" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Register</span></a>
                             {{--                            <p class="primary-btn ml-2 d-inline-flex align-items-center" id="signinButton" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Login/Register</span></p>--}}
                             <h4 class="text-warning mb-10" style="font-weight: bold"></h4>
                         </div>
@@ -304,17 +304,17 @@
                 <div class="col-lg-5">
                     <div class="story-box" data-aos="fade-right" style="font-size:1.1em;">
                         <h4 class="text-uppercase">About AIFLT</h4><br>
-                        <p style="text-align: justify;">An all India online exam by Techfest to gauge the level of financial awareness among the youth of the country. Following are the examinations to be held on --:
+                        <p style="text-align: justify;">An all India online exam by Techfest to gauge the level of financial awareness among the youth of the country.
                             <br> <br>
                             <strong>
 {{--                                <a href=""><u>Register yourself to view this year’s problem statement.</u></a>--}}
                             </strong>
                         <ul><strong>
-{{--                                <li>Your idea will be judged on the basis of:</li>--}}
-                                <li><strong>Exam 1</strong> Pdf</li>
-                                <li><strong>Exam 2</strong> Pdf</li>
-                                <li><strong>Exam 3</strong> Pdf</li>
-                                <li><strong>Exam 4</strong> Pdf</li>
+                                <li>Your idea will be judged on the basis of:</li>
+                                <u><a href="/2019/initiatives/financial_literacy/AIFLT PDF-converted.pdf"><li><strong>This structure</strong>Pdf</a> </li></u>
+{{--                                <li><strong>Exam 2</strong> Pdf</li>--}}
+{{--                                <li><strong>Exam 3</strong> Pdf</li>--}}
+{{--                                <li><strong>Exam 4</strong> Pdf</li>--}}
                                 </strong>
                         </ul>
                         </p>
@@ -449,8 +449,8 @@
 
                     {{--                    For more details, visit- https://techfest.org and like our Facebook Page to stay updated.--}}
                     {{--                    <ul>--}}
-                    <li style="    font-size: 18px;color: black;">Top 5 students from every exam will be invited to IIT Bombay during Techfest 2019-20 and will get the opportunity to attend all programs.</li>
-                    <li style="    font-size: 18px;color: black;">Top 5 students from every exam will get an opportunity to visit the National Stock Exchange in Mumbai</li>
+                    <li style="    font-size: 18px;color: black;">Top 5 students will be invited to IIT Bombay during Techfest 2019-20 and will get the opportunity to attend all programs.</li>
+                    <li style="    font-size: 18px;color: black;">Top 5 students will get an opportunity to visit the National Stock Exchange in Mumbai</li>
                     <li style="    font-size: 18px;color: black;">Winners will get merit certificates and medals from Techfest, IIT Bombay</li>
 
 {{--                    <li>Winners will get a chance to visit Vikram Sarabhai Space Centre, Thiruvananthapuram and witness the state of the art technologies being used by ISRO.</li>--}}

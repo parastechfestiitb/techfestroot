@@ -219,6 +219,42 @@
         </div>
     </div>
 </section>
+<?php
+$lectures_row = DB::table('lectures')->where(['year'=>"2019"])->get();
+$past_lectures_row = DB::table('lectures')->where(['year'=>null])->get();
+?>
+
+<section class="ftco-section" id="pastlec-section">
+    <div class="container-fluid px-5">
+        <div class="col-xs-8 col-sm-12">
+            <div>
+                <h2 style="margin-top: -6.5%; position: absolute;color: #0b0b0b; font-size: 29px;"><b>Lecturers</b></h2>
+                <img class="arrow2" src="/2019/Heading.svg" alt="" style="padding-top: 0px" >
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach( $lectures_row as $i)
+                <div class="col-md-6 col-lg-3 ftco-animate zoom " style="margin-bottom: 35px">
+                    <div class="staff zoom">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch shadow" style="background-image: url('{{$i->image}}');position: absolute; z-index: -1;" ></div>
+                        </div>
+                        <div class="colors1">
+                            <h3 class="colors" >{{$i->name}}</h3>
+                            <span class="colors2" style="margin-left: 13px;color: #1d2124">{{$i->designation}}</span>
+                        </div>
+                    </div>
+                </div>
+
+            @endforeach
+
+
+
+
+        </div>
+    </div>
+</section>
 <section class="ftco-section" id="pastlec-section">
     <div class="container-fluid px-5">
         <div class="col-xs-8 col-sm-12">
@@ -233,548 +269,30 @@
         </div>
         <div class="row">
 
-{{--            <div class="col-md-6 col-lg-3 ftco-animate ">--}}
-{{--                <div class="staff zoom">--}}
-{{--                    <div class="img-wrap d-flex align-items-stretch">--}}
-{{--                        <div class="img align-self-stretch shadow " style="background-image: url(/2019/lectures/images/dalai-min.jpeg);position: absolute; z-index: -1;" ></div>--}}
-
-{{--                    </div>--}}
-{{--                    <div class="colors1">--}}
-{{--                        <h3 class="colors" > His Holiness the 14th Dalai Lama</h3>--}}
-{{--                        <span class="" style="margin-left: 13px ;margin-bottom: 10px ;color: #1d2124">Nobel Peace Prize Laureate</span>--}}
-{{--                    </div>--}}
-{{--                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">--}}
-
-{{--                        <div class="faded">--}}
-{{--                            <p class="desc_text">Known for his words of wisdom about Buddhist teachings, he is recognized as one of the "Children of Mahatma Gandhi" as Gandhi's spiritual heir to nonviolence</p>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-
-
-{{--                </div>--}}
-{{--            </div>--}}
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom ">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/apj_final.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors" >Late Dr. APJ Abdul Kalam</h3>
-                        <span class="colors2" style="margin-left: 13px;color: #1d2124">Former President of India</span>
-                    </div>
-
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-                        <div class="faded">
-                            <p class="desc_text">Known as the Missile Man of India for his pivotal role in India's Pokhran-II nuclear tests, he is the recipient of the Bharat Ratna, India's highest civilian award
-
-                            </p>
-
+            @foreach( $past_lectures_row as $i)
+                <div class="col-md-6 col-lg-3 ftco-animate zoom ">
+                    <div class="staff zoom">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch shadow" style="background-image: url('{{$i->image}}');position: absolute; z-index: -1;" ></div>
                         </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate zoom ">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/sophia_final.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors" > Sophia</h3>
-                        <span class="colors2" style="margin-left: 13px;color: #1d2124">World's First Robot Citizen</span>
-                    </div>
-
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-                        <div class="faded">
-                            <p class="desc_text">The first humanoid robot to receive citizenship of any country, Sophia uses AI and visual data processing to make smart conversations and get smarter every day
-
-                            </p>
-
+                        <div class="colors1">
+                            <h3 class="colors" >{{$i->name}}</h3>
+                            <span class="colors2" style="margin-left: 13px;color: #1d2124">{{$i->designation}}</span>
                         </div>
-                    </div>
 
-
-
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="  background-image: url(/2019/lectures/images/jimmy1-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors" >Jimmy Wales
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Co-founder, Wikipedia</span>
-                    </div>
-                    <div class="text pt-3 text-center"style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">One of the most prolific Internet entrepreneur, he was recognized as one of "The 100 Most Influential People in the World" by Time Magazine in 2006
-
-
-                            </p>
-
+                        <div class="text pt-3 text-center" style="padding-bottom: 10%;">
+                            <div class="faded">
+                                <p class="desc_text">{{$i->description}}</p>
+                            </div>
                         </div>
-                    </div>
 
 
 
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow shadow" style="background-image: url(/2019/lectures/images/vint-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors" >Vint Cerf</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">One of the Fathers of Internet</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">An American Internet pioneer, Prof. Vint Cerf is the recipient of numerous honorary degrees and awards such as the Turing Award and the Presidential Medal of Freedom
-
-
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/gaur1-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors" >Gaur Gopal Das</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Motivational Guru, ISKCON</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">He is known for having his distinctive way of explaining spirituality to the youth through his powerful oratory, logical reasoning and subtle form of humour</p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/simon2-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Simon Taufel</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Member of the ICC Elite Umpire Panel</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">A retired Australian cricket umpire considered as one of the best umpires in the game, he was the recipient of the "ICC Umpire of the Year" award 5 times in a row
-
-
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/bjarne-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Bjarne Stroustrup</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Inventor of C++</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">Noted for the creation and development of the C++ programming language, he won the Computer Pioneer Award of the IEEE Computer Society in 2018
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/jaap-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors"> Jaap Haarsten
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Inventor of Bluetooth</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">With a diverse profile of being an electrical engineer, researcher, inventor and entrepreneur, he was inducted in the National Inventors Hall of Fame in 2015
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/david-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">David J Griffiths
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Physicist and Renowned Author</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">Regarded as the author of three highly influential textbooks for undergraduate students, he is extensively cited for his outstanding contributions to physics education
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/ada-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Ada Yonath</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Nobel Prize Laureate in Chemistry</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">Recognized for her pioneering studies on the structure and function of the ribosome, in 2009, she became the first Israeli woman to win the Nobel Prize
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/john-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Late John Nash
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Nobel Laureate in Economic Sciences</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">Acknowledged as the only person to be awarded both the Nobel Prize and the Abel Prize, he made fundamental contributions to game theory and differential geometry
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/randy-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Randy Schekman
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Nobel Prize Laureate in Physiology</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">An American cell biologist at the University of California, he shared the Nobel Prize for his ground-breaking work on cell membrane vesicle trafficking in 2013
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/amartya-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Amartya Sen</h3>
-                        <span class="colors2" style="margin-left: 13px; color: #1d2124">Nobel Laureate in Economic Sciences</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">An Indian economist and philosopher, he is the recipient of the Nobel Memorial Prize in Economic Sciences and India's Bharat Ratna Award for his work in welfare economics
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/jay-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Jay Vijayan
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: black ">Former CIO, Tesla Motors</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">Currently the CEO of Tekion Corporation and Former Chief Information Officer of Tesla Motors, he is known for his leadership in building scalable software for businesses
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/mark1-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Mark Papermaster</h3>
-                        <span class="colors2" style="margin-left: 13px; color: black ">Chief Technology Officer, AMD</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">He is currently serving as the CTO and executive vice president of Technology and Engineering at AMD. He also served as the Senior Vice President at Apple Inc.
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-{{--            <div class="col-md-6 col-lg-3 ftco-animate zoom">--}}
-{{--                <div class="staff zoom">--}}
-{{--                    <div class="img-wrap d-flex align-items-stretch">--}}
-{{--                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/ada-min.jpeg);position: absolute; z-index: -1;" ></div>--}}
-
-{{--                    </div>--}}
-{{--                    <div class="colors1">--}}
-{{--                        <h3 class="colors">Ada Yonath</h3>--}}
-{{--                        <span class="colors2" style="margin-left: 13px; color: black ">Nobel Prize recipient in Chemistry</span>--}}
-{{--                    </div>--}}
-{{--                    <div class="text pt-3 text-center">--}}
-
-{{--                        <div class="faded">--}}
-{{--                            <p class="desc_text">In 2009, she received the Nobel Prize in Chemistry along with Venkatraman Ramakrishnan and Thomas A. Steitz for her studies on the structure and function of the ribosome, becoming the first Israeli woman to win the Nobel Prize out of ten Israeli Nobel laureates.--}}
-
-
-{{--                            </p>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-
-
-{{--                </div>--}}
-{{--            </div>--}}
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/jocelyn-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Jocelyn Goldfein</h3>
-                        <span class="colors2" style="margin-left: 13px;color: black ">Former Engineering Director, Facebook</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">An American technology executive and investor, she was recognized as one of the "43 Most Powerful Female Engineers” by Business Insider in 2017
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/tanmay-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Tanmay Bakshi</h3>
-                        <span class="colors2" style="margin-left: 13px; color: black ">Youngest IBM Watson Developer</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">A 15-year-old author, AI Expert, TED speaker and Honorary IBM Cloud Advisor, he has addressed over 200,000 executives, developers and intellectuals worldwide
-
-
-                            </p>
-
-                        </div>
                     </div>
                 </div>
-            </div>
 
+            @endforeach
 
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/manohar-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Late Manohar Parrikar</h3>
-                        <span class="colors2" style="margin-left: 13px;color: black ">Former Chief Minister of Goa</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">An IIT Bombay Alumnus, he was recognized as one of the most influential Indian politicians who served as the Defence Minister of India and as the Chief Minister of Goa
-
-
-                            </p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 ftco-animate zoom">
-                <div class="staff zoom">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch shadow" style="background-image: url(/2019/lectures/images/viral-min.jpeg);position: absolute; z-index: -1;" ></div>
-
-                    </div>
-                    <div class="colors1">
-                        <h3 class="colors">Viral V. Acharya
-                        </h3>
-                        <span class="colors2" style="margin-left: 13px; color: black "> Former Deputy Governor, RBI</span>
-                    </div>
-                    <div class="text pt-3 text-center" style="padding-bottom: 10%;">
-
-                        <div class="faded">
-                            <p class="desc_text">The former Deputy Governor of the Reserve Bank of India, he also served in the Academic Council of the National Institute of Securities Markets
-
-
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -783,6 +301,7 @@
         </div>
     </div>
 </section>
+
 
 
 

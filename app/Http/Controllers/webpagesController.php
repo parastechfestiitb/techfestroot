@@ -196,6 +196,9 @@ Om Jaiswal
         }
     }
 
+    public function technoholix(){
+        return view('2019.technoholix.technoholix');
+    }
     public function technoholix_reg(Request $data){
         DB::table('tf_techx')->insert([
             'name'=>$data->name,
@@ -205,5 +208,23 @@ Om Jaiswal
             'age'=>$data->age,
             'created_at'=>Carbon::now()->addHours(5)->addMinutes(30)
         ]);
+        $subject = "Techfest Gymkhana Night | 5th January,2020- IIT Bombay Gymkhana Grounds | Asia's Largest Science and Technology Festival";
+        $txt = "Dear $data->name,
+
+Thank you for registering for Technoholix Gymkhana Night!
+
+The utopia of technology, entertainment and glamour, Techfest is back with  Technoholix Gymkhana Night. Mark you calendars, set your reminders for the greatest night you'll ever witness! With our headliner Afishal ready to set the stage on fire, we have more surprises   to get you on the dance floor! Join 10,000 other people to conclude Techfest 2019-20 in grandest way possible.
+Venue : Gymkhana Grounds, IIT Bombay Campus
+Date : 5th January 
+Time : Evening (exact details to be uploaded soon)
+
+Use the unique id allotted to you to get you passes free of cost from the hospitality desk at Techfest ,IIT Bombay. The exact details and timings of pass distribution will be uploaded soon on the Technoholix website!
+
+When Technology meets Entertainment, the only possible result is a night to remember! See you soon.
+
+";
+
+        mail($data->email, $subject, $txt, "From:adamya@techfest.org" );
+        return Redirect::back()->withErrors(["Thanks for registering!"]);
     }
 }

@@ -68,20 +68,20 @@
                                 <input class="input--style-2" type="number" placeholder="Mobile Number" required name="number" value="" max="9999999999" min="1000000000">
                             </div>
                         </div>
-                        <div class="col-2">
-                            <div class="input-group">
-                                <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="zone" required>
-                                        <option disabled="disabled" selected="selected" value="">Zone</option>
-                                        <option>Zone 1</option>
-                                        <option>Zone 2</option>
-                                        <option>Zone 3</option>
-                                        <option>Zone 4</option>
-                                    </select>
-                                    <div class="select-dropdown"></div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="col-2">--}}
+{{--                            <div class="input-group">--}}
+{{--                                <div class="rs-select2 js-select-simple select--no-search">--}}
+{{--                                    <select name="zone" required>--}}
+{{--                                        <option disabled="disabled" selected="selected" value="">Zone</option>--}}
+{{--                                        <option>Zone 1</option>--}}
+{{--                                        <option>Zone 2</option>--}}
+{{--                                        <option>Zone 3</option>--}}
+{{--                                        <option>Zone 4</option>--}}
+{{--                                    </select>--}}
+{{--                                    <div class="select-dropdown"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="col-2">
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <div class="input-group">

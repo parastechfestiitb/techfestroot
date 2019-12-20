@@ -441,7 +441,8 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->transportation == 0 or empty($user_row->transportation))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/transportation/reg" class="btn btn-primary btn-learn" >Register</a>
+{{--                                    <a href="/competitions/transportation/reg" class="btn btn-primary btn-learn" >Register</a>--}}
+                                    <a href="#" class="btn btn-primary btn-learn" >Registration Closed</a>
 {{--                                    <a href="#" class="btn btn-primary btn-learn" >Registrations</a>--}}
                                 @endif
                                 @if($user_row->transportation == 1 && empty($user_row->transportation_team))
@@ -481,7 +482,7 @@
                                 @endif
                             @endif
                             @if(empty($user_row->email))
-                                <button class="btn btn-primary btn-learn" id="signinButton">Register</button>
+                                <button class="btn btn-primary btn-learn" >Registration Closed</button>
                                 <a href="/2019/compi/ps/How to register.pdf" style="color: white">Want to know how to register - Click here</a>
 
                             @endif

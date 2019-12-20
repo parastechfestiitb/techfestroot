@@ -175,24 +175,24 @@
 <div class="head-c">
     <h3>Competitions & Ideate</h3>
 </div>
-
-    <div class="card">
-        <img src="/2019/contactus/om.jpg" alt="" style="width: 100%">
-        <h4 style="text-align: center;">Om Jaiswal</h4>
-        <p style="text-align: center;">omjaiswal@techfest.org</p>
-        <p style="text-align: center;">7400400933</p>
+    <div class="card" style="margin: 2% 29% 2% 29%;" >
+        <img src="/2019/contactus/manjeet.jpg" alt="" style="width: 100%">
+        <h4 style="text-align: center;">Manjeet Singh</h4>
+        <p style="text-align: center;">manjeet@techfest.org</p>
+        <p style="text-align: center;">7568387238</p>
     </div>
+    
     <div class="card" >
         <img src="/2019/contactus/abhinav.jpg" alt="" style="width: 100%">
         <h4 style="text-align: center;">Abhinav Kumar</h4>
         <p style="text-align: center;">abhinav@techfest.org</p>
         <p style="text-align: center;">8299544527</p>
     </div>
-    <div class="card" style="margin: 2% 29% 2% 29%;" >
-        <img src="/2019/contactus/manjeet.jpg" alt="" style="width: 100%">
-        <h4 style="text-align: center;">Manjeet Singh</h4>
-        <p style="text-align: center;">manjeet@techfest.org</p>
-        <p style="text-align: center;">7568387238</p>
+    <div class="card">
+        <img src="/2019/contactus/om.jpg" alt="" style="width: 100%">
+        <h4 style="text-align: center;">Om Jaiswal</h4>
+        <p style="text-align: center;">omjaiswal@techfest.org</p>
+        <p style="text-align: center;">7400400933</p>
     </div>
 
 <div class="head-c">

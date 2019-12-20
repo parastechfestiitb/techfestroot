@@ -853,6 +853,11 @@
 </style>
 <section id="contact-us-section">
     <div class="row" style="background-color: rgba(0,0,0,0.5);">
+        <div class="col-12" style="text-align: center;">
+            <br>
+            <h2 style="color: white;text-align: center;">Our Partner</h2>
+            <img src="/2019/ift/blankaloog copy.png" alt="" style="max-height: 200px;margin: auto;filter: invert(1)">
+        </div>
         <div class="col-md-1"></div>
         <div class="col-md-11">
             <br>

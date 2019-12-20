@@ -361,10 +361,13 @@ Team Techfest
         return view('/events/ic_test')->with(['data'=>$data,'hashed_random_password'=>$hashed_random_password,'zone'=>$zone,'zone2'=>$zone2,'user_row'=>$user_row ]);
     }
 
+    public function exam(Request $data){
+        return redirect("http://techfest.justexam.in/student/denter?rollno=$data->roll_number");
+    }
     public function finlitGet( ){
         return view('events.finlit');
     }
-    public function finlitLogin(){
+    public function finlitregister(){
         return view('/events/finlitLogin');
     }
     public function finlit_reg(Request $data){
@@ -376,14 +379,11 @@ Team Techfest
                     'name'    =>$data->name,
                     'hashed_random_password'=>$hashed_random_password,
                     'number'  =>$data->number,
-                        'zone'  =>$data->zone,
+                    'zone'  =>$data->zone,
                     'school'  =>$data->school,
-            //            'state'  =>$data->state,
                     'address'  =>$data->number,
                     'city'   =>$data->city,
                     'pincode'   =>$data->pincode,
-            //            'zone'   =>$zone,
-            //            'zone2'   =>$zone2,
                 ]);
             }
         $user_row = DB::table('tf_finlit')->where(['email'=>$data->email])->get()->first();
@@ -398,7 +398,7 @@ You have successfully registered in Financial Literacy test with $user_row->emai
 
 Following are your registration details:
 
-Roll No: finlit-$user_row->id
+Roll No: FINLIT$user_row->id
 Password: $user_row->hashed_random_password
 
 Please note down your these details for further use.
@@ -406,11 +406,27 @@ Please note down your these details for further use.
 Regards
 Team Techfest
 ";
-        mail($user_row->email, $subject, $txt, "From:finlit@techfest.org" );
+        mail($user_row->email, $subject, $txt, "From:adamya@techfest.org" );
 
-        return view('/events/finlit_test')->with(['data'=>$data,'hashed_random_password'=>$hashed_random_password]);
+        return view('/events/finlit_test')->with(['user_row'=>$user_row,'data'=>$data,'hashed_random_password'=>$hashed_random_password]);
     }
 
+    public function finlitlogin(){
+        return view('events.finlit_password_login');
+    }
+    public function finlitlogin_success(Request $data){
+        $id_without_zone = substr($data->email, -5);
+        $user_row = DB::table('tf_finlit')->where(['id'=>$id_without_zone])->get()->first();
+        if(empty($user_row->email)){
+            return Redirect::back()->withErrors(["$data->email is not registered"]);
+        }
+        if(!empty($user_row->email)){
+            if( $user_row->hashed_random_password == $data->key){
+                return view('events.ic_after_login')->with(['user_row'=>$user_row]);
+            }
+            else return Redirect::back()->withErrors(["Wrong Password"]);
+        }
+    }
 
 
 
