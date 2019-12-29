@@ -4246,7 +4246,201 @@ Regards.";
         return redirect("/competitions/makerthon");
     }
 
+    public function codebuzz(Request $request){
+        $client = $this->google_auth($request);
+        if ($client) {
+            $oauth2 = new Google_Service_Oauth2($client);
+            $userInfo = $oauth2->userinfo->get();
+            $user = DB::table('tf_reg')->where(['email' => $userInfo->email])->first();
+            session(['user' => $user]);  //todo session started
+            if (!$user) {
+                DB::table('tf_reg')->insert(['email' => $userInfo->email, 'name' => $userInfo->name, 'picture' => $userInfo->picture, 'no_of_login' => '1']);
+            }
+            if ($user) {
+                DB::table('tf_reg')->where(['email' => $user->email])->update(['picture' => $userInfo->picture]);
+                $user_row = DB::table('tf_reg')->where(['email' => session()->get('user')->email])->first();// return the first row containing the user(session wala user)
+                if($user_row->codebuzz > 0 && empty($user_row->number)){
+                    return redirect('/competitions/details_form');
+                }
+                return view("2019.competitions.codebuzz")->with(['user_row' => $user_row]);
+            }
+        }
+        if(!isset($request->code) && !session()->has('user')) return view('2019.competitions.codebuzz');
 
+        return redirect("/competitions/codebuzz/");
+    }
+    public function regcodebuzz(Request $request){
+        $user_row = DB::table('tf_reg')->where(['email' => session()->get('user')->email])->first();// return the first row containing the user(session wala user)
+        DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->update(['codebuzz'=>'1']);
+        $subject = "Welcome to codebuzz - Techfest, IIT Bombay";
+        $txt = "Dear $user_row->name,
+
+Greetings! 
+You have successfully registered in codebuzz with $user_row->email as your registered mail Id. Now you must either Create a Team or Join a Team to complete the procedure.
+
+Carefully read the FAQ’s of competitions carefully to know more.
+
+Regards
+";
+
+        mail($user_row->email, $subject, $txt, "From:competitions@techfest.org" );
+        return redirect("/competitions/codebuzz/");
+    }
+    public function codebuzz_create_team_form(Request $data){
+        $current_user_data = DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->first();
+        return view("2019.competitions.create_teamform")->with(['current_user_data'=>$current_user_data, 'form'=>"codebuzz"]);
+    }
+    public function codebuzz_join_team_form(Request $data){
+        $current_user_data = DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->first();
+        return view("2019.competitions.join_teamform")->with(['current_user_data'=>$current_user_data,'form'=>"codebuzz"]);
+    }
+    public function codebuzz_leave_team(){
+        if(session()->has('user')) {
+            $current_team =  DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->first();
+            if(!empty($current_team->codebuzz_team)){
+                DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->update(['codebuzz_team'=>'']);
+                return redirect("/competitions/codebuzz");
+            }
+            else return "you are not in a team";
+        }
+    }
+    public function codebuzz_create_team_reg(Request $data){
+        if (session()->has('user')) {
+            $current_user_data = DB::table('tf_reg')->where(['email' => session()->get('user')->email])->first();
+            $a = 190000;
+            $b = $current_user_data->id;
+            $team_id = $a +$b;
+            DB::table('tf_reg')->where(['email' => $current_user_data->email])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+
+            $p2_exist = DB::table('tf_reg')->where(['email'=>$data->email2])->first();
+            if(!empty($data->email2)){if (!empty($p2_exist->email)) {
+                $p2 = DB::table('tf_reg')->where(['email' => $data->email2])->first();
+//                check if he is already in a team
+                if (empty($p2->codebuzz_team)) {
+                    DB::table('tf_reg')->where(['email' => $current_user_data->email])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email2])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email2])->update(['codebuzz' => '1']);
+
+
+
+                    $subject2 = "codebuzz, Techfeat IIT Bomabay";
+                    $txt2 = "Dear $p2_exist->name, you have been successfully added to $current_user_data->name's team for codebuzz .
+Your Team ID and Registered Mail ID are very important and will be used in future.
+You can leave your current team by clicking on Leave a Team. 
+Regards.";
+
+                    mail($p2_exist->email, $subject2, $txt2, "From:competitions@techfest.org" );
+
+
+
+                    $subject0 = "codebuzz, Techfeat IIT Bomabay";
+                    $txt0 = "Dear $current_user_data->name, your team is successfully created for codebuzz  
+You are the Team Leader, you can Remove a Team member or Dissolve the existing team. Hoping to see you at Techfest  
+Regards. ";
+
+                    mail($current_user_data->email, $subject0, $txt0, "From:competitions@techfest.org" );
+
+
+                } else return Redirect::back()->withErrors(["$p2->email is already in another team, he/she must leave current team first"]);
+
+            } else return Redirect::back()->withErrors(["$data->email2 is not registered on techfest"]);}
+
+
+            $p3_exist = DB::table('tf_reg')->where(['email'=>$data->email3])->first();
+            if(!empty($data->email3)){if (!empty($p3_exist->email)) {
+                $p3 = DB::table('tf_reg')->where(['email' => $data->email3])->first();
+//                check if he is already in a team
+                if (empty($p3->codebuzz_team)) {
+                    DB::table('tf_reg')->where(['email' => $current_user_data->email])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email3])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email3])->update(['codebuzz' => '1']);
+
+
+
+                    $subject2 = "codebuzz, Techfeat IIT Bomabay";
+                    $txt1 = "Dear $p3_exist->name, you have been successfully added to $current_user_data->name's team for codebuzz .
+Your Team ID and Registered Mail ID are very important and will be used in future.
+You can leave your current team by clicking on Leave a Team. 
+Regards.";
+
+                    mail($p3_exist->email, $subject2, $txt2, "From:competitions@techfest.org" );
+
+
+                } else return Redirect::back()->withErrors(["$p3->email is already in another team, he/she must leave current team first"]);
+
+            } else return Redirect::back()->withErrors(["$data->email3 is not registered on techfest"]);}
+
+            $p4_exist = DB::table('tf_reg')->where(['email'=>$data->email4])->first();
+            if(!empty($data->email3)){if(!empty($p4_exist->email)) {
+                $p4 = DB::table('tf_reg')->where(['email' => $data->email4])->first();
+//                check if he is already in a team
+                if (empty($p4->codebuzz_team)) {
+                    DB::table('tf_reg')->where(['email' => $current_user_data->email])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email4])->update(['codebuzz_team' => $current_user_data->email, 'codebuzz_team_id'=> $team_id]);
+                    DB::table('tf_reg')->where(['email' => $data->email4])->update(['codebuzz' => '1']);
+
+
+
+                    $subject4 = "codebuzz, Techfeat IIT Bomabay";
+                    $txt4 = "Dear $p4_exist->name, you have been successfully added to $current_user_data->name's team for codebuzz .
+Your Team ID and Registered Mail ID are very important and will be used in future.
+You can leave your current team by clicking on Leave a Team. 
+Regards.";
+
+                    mail($p4_exist->email, $subject4, $txt4, "From:competitions@techfest.org" );
+
+
+
+                } else return  Redirect::back()->withErrors(["$p4->email is already in another team, he/she must leave current team first"]);
+
+            } else return Redirect::back()->withErrors(["$data->email4 is not registered on techfest"]);}
+
+            return redirect("/competitions/codebuzz");
+
+        } else return redirect("/competitions/codebuzz");
+    }
+    public function codebuzz_join_team_reg(Request $data){
+        if(session()->has('user')) {
+            $current_user_data = DB::table('tf_reg')->where(['email'=>session()->get('user')->email])->first();
+            $team_member_row = DB::table('tf_reg')->where(['email'=>$data->email])->first();
+            if(!empty($team_member_row->email)){
+                $team_member_count = DB::table('tf_reg')->where(['codebuzz_team' => $team_member_row->codebuzz_team])->count();
+
+                if(empty($current_user_data->codebuzz_team)){
+                    if($team_member_count <= 4 ){
+                        if(!empty($data->email)){DB::table('tf_reg')->where(['email'=>$current_user_data->email])->update(['codebuzz_team'=>$team_member_row->codebuzz_team]);}
+                        return redirect("/competitions/codebuzz");
+                    }
+                    else return Redirect::back()->withErrors(["Team does not exist /Team already full"]);
+                }
+                else return Redirect::back()->withErrors(["you are already registered in a team, drop current team to join new one"]);
+            }
+            else return Redirect::back()->withErrors(["$data->email is not registered on Techfest"]);
+
+
+        }
+        else return Redirect::back()->withErrors(["first signin"]);
+    }
+    public function codebuzz_remove_member (Request $request, $id){
+        $user_row = DB::table('tf_reg')->where(['id' => $id])->first();
+        $subject = "codebuzz, Techfeat IIT Bomabay";
+        $txt = "Dear $user_row->name, you have been removed from the codebuzz Team by your team leader $user_row->codebuzz_team which had team id zzz, you can either join another team or create your own team as a single member if you want.";
+
+        mail($user_row->email, $subject, $txt, "From:competitions@techfest.org" );
+
+        DB::table('tf_reg')->where(['id' => $id])->update(['codebuzz_team'=> '']);
+
+        return redirect("/competitions/codebuzz");
+    }
+    public function codebuzz_dissolve (){
+        $current_user_data = DB::table('tf_reg')->where(['email' => session()->get('user')->email])->first();
+        $team =  DB::table('tf_reg')->where(['codebuzz_team' => $current_user_data->codebuzz_team])->get();
+        if (!empty($team[0]->id)){DB::table('tf_reg')->where(['id' => $team[0]->id])->update(['codebuzz_team'=> '']);}
+        if (!empty($team[1]->id)){DB::table('tf_reg')->where(['id' => $team[1]->id])->update(['codebuzz_team'=> '']);}
+        if (!empty($team[2]->id)){DB::table('tf_reg')->where(['id' => $team[2]->id])->update(['codebuzz_team'=> '']);}
+        if (!empty($team[3]->id)){DB::table('tf_reg')->where(['id' => $team[3]->id])->update(['codebuzz_team'=> '']);}
+        return redirect("/competitions/codebuzz");
+    }
 
 
 

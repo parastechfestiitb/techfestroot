@@ -422,7 +422,7 @@ Team Techfest
         }
         if(!empty($user_row->email)){
             if( $user_row->hashed_random_password == $data->key){
-                return view('events.ic_after_login')->with(['user_row'=>$user_row]);
+                return redirect("http://techfest.justexam.in/student/denter?rollno=$id_without_zone");
             }
             else return Redirect::back()->withErrors(["Wrong Password"]);
         }

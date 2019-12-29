@@ -204,6 +204,8 @@ Route::get('/admindashboard_payment_mun', 'tfadminController@adminDashboard_paym
 Route::get('/admindashboard_payment_workshops', 'tfadminController@adminDashboard_payment_workshops');
 Route::get('/admindashboard_ic', 'tfadminController@admindashboard_ic');
 Route::get('/admindashboard_hospitality', 'tfadminController@admindashboard_hospitality');
+Route::get('/admindashboard_technoholix', 'tfadminController@adminDashboard_technoholix');
+Route::get('/admindashboard_aiflt', 'tfadminController@adminDashboard_aiflt');
 
 Route::get('/admindashboard_certificate', 'tfadminController@adminDashboard_certificate');
 Route::get('/admindashboard_certificate/insert', 'tfadminController@adminDashboard_certificate_insert_get');
@@ -565,6 +567,19 @@ Route::get('/competitions/makerthon/dissolveteam', 'MainController@makerthon_dis
 Route::post('/competitions/makerthon/remove/{id}','MainController@makerthon_remove_member');
 Route::get('/competitions/makerthon/remove/{id}','MainController@makerthon_remove_member');
 
+Route::redirect('/codebuzz', '/competitions/codebuzz');
+Route::get('/competitions/codebuzz', 'MainController@codebuzz');
+Route::post('/competitions/codebuzz', 'MainController@codebuzz');
+Route::get('/competitions/codebuzz/reg','MainController@regcodebuzz');
+Route::get('/competitions/codebuzz/jointeam', 'MainController@codebuzz_join_team_form');
+Route::post('/competitions/codebuzz/jointeam', 'MainController@codebuzz_join_team_reg');
+Route::get('/competitions/codebuzz/createteam', 'MainController@codebuzz_create_team_form');
+Route::post('/competitions/codebuzz/createteam', 'MainController@codebuzz_create_team_reg');
+Route::get('/competitions/codebuzz/leaveteam', 'MainController@codebuzz_leave_team');
+Route::get('/competitions/codebuzz/dissolveteam', 'MainController@codebuzz_dissolve');
+Route::post('/competitions/codebuzz/remove/{id}','MainController@codebuzz_remove_member');
+Route::get('/competitions/codebuzz/remove/{id}','MainController@codebuzz_remove_member');
+
 
 
 Route::redirect('/wpc', '/competitions/wpc');
@@ -706,9 +721,10 @@ Route::redirect('/ift', '/fullthrottle');
 Route::get('/fullthrottle', function () {return view('2019.ift.ift');});
 Route::get('/ift/form', function () {return view('2019.ift.ift_form');});
 Route::post('/ift/form', 'webpagesController@ift_form_reg');
+Route::redirect('/techx', '/technoholix');
 
 Route::get('/technoholix',  'webpagesController@technoholix');
-//Route::get('/technoholix2', function () {return view('2019.technoholix.technoholix');});
+Route::get('/technoholix2', function () {return view('2019.technoholix.technoholix2');});
 Route::post('/technoholix/post', 'webpagesController@technoholix_reg');
 //Route::get('/workshops', 'MainController@workshops');
 Route::get('/media', function () {return view('2019.media');});

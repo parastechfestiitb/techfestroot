@@ -355,7 +355,19 @@
     }
 </style>
 <section id="contact-us-section">
+
     <div class="row" style="background-color: rgba(0,0,0,0.5);">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="text-align: center;">
+                    <br>
+                    <h3 style="color: white;text-align: center;">Our Sponsor</h3>
+                        <img src="/2019/summit/stepsetgo.png" alt="" style="width: 80%">
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
         <div class="col-md-1"></div>
         <div class="col-md-11">
             <br>

@@ -447,7 +447,8 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->wcodecode == 0 or empty($user_row->wcodecode))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/wcodecode/reg" class="btn btn-primary btn-learn " >Register (Wildcard)</a>
+{{--                                    <a href="/competitions/wcodecode/reg" class="btn btn-primary btn-learn " >Register (Wildcard)</a>--}}
+                                    <a href="#" class="btn btn-primary btn-learn " >Registration Closed</a>
                                 @endif
                                 @if($user_row->wcodecode == 1 && empty($user_row->wcodecode_team))
                                     <div class="dropdown ">
@@ -496,7 +497,7 @@
                                         cursor:not-allowed;
                                     }
                                 </style>
-                                <button class="btn btn-primary btn-learn " id="signinButton">Register (Wildcard)</button>
+                                <button class="btn btn-primary btn-learn " >Registration Closed</button>
                                 <a href="/2019/compi/ps/How to register.pdf" style="color: white">Want to know how to register - Click here</a>
 
                             @endif

@@ -223,12 +223,9 @@
     <div class="col-md-4">
         <br>
         <div class="profile_image">
-
-
             <br>
             <a href="https://www.xilinx.com/">
                 <img src="http://techfest.org/2019/sponsors/2019/img/Xilinx_Logo_Spot%20(1).jpg" style="height: 50px; width: auto"></a>
-
         </div>
 
 
@@ -274,6 +271,30 @@
         <div class="profile_image">
             <a href="http://www.robovr.world/RoboVR/Home.html">
                 <img src="http://techfest.org/2019/sponsors/2019/img/RoboVR%20Logo%20(1).jpg" style="height: 140px; width: auto"></a>
+
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <a href="http://www.robovr.world/RoboVR/Home.html">
+                <img src="http://techfest.org/2019/sponsors/2019/img/codingninja.png" style="height: 100px; width: auto"></a>
+
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/ardc.png" style="height: 100px; width: auto"></a>
+
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/yellow.png" style="height: 120px; width: auto"></a>
 
         </div>
 
@@ -338,6 +359,7 @@
 
             <br>
             <br>
+            <h3>Media and Entertainment Partner</h3>
             <a href="http://www.ableducation.com/about-us.php">
                 <img src="http://techfest.org/2019/sponsors/2019/img/Jio%20Studios-Logo-Unboxed-Hor-RedJioDot-Blue-CMYK.png" style="height: 80px; width: auto"></a>
         </div>
@@ -527,6 +549,26 @@
 
     </div>
     <div class="col-md-4">
+        <div class="profile_image"><br>
+
+
+            <br>
+            <br>
+            <h3>ReachOut Partner</h3>
+            <a href="http://mysoul.co.in/">
+                <img src="http://techfest.org/2019/sponsors/2019/img/cio.png" style="height: 40px; width: auto"></a>
+        </div>
+
+        <br>
+        <br>
+
+    </div>
+
+</div>
+<br>
+<div class="row">
+
+    <div class="col-md-4">
         <div class="profile_image">
 
             <br>
@@ -539,9 +581,66 @@
         <br>
 
     </div>
-</div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <br>
+            <br>
+            <h3>Digital Broadcast Partner</h3>
+            <a href="https://kores.in/">
+                <img src="http://techfest.org/2019/sponsors/2019/img/jio.png" style="height: 80px; width: auto"></a>
+        </div>
+        <br>
+        <br>
 
-<br><br><br>
+    </div>
+    <br>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <br>
+            <br>
+            <h3>Official DOOH Partner</h3>
+            <a href="https://kores.in/">
+                <img src="http://techfest.org/2019/sponsors/2019/img/screen.png" style="height: 80px; width: auto"></a>
+        </div>
+        <br>
+        <br>
+
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <br>
+            <br>
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/segate.jpg" style="height: 80px; width: auto"></a>
+        </div>
+        <br>
+        <br>
+
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <br>
+            <br>
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/coco.png" style="height: 80px; width: auto"></a>
+        </div>
+        <br>
+        <br>
+
+    </div>
+    <br>
+    <div class="col-md-4">
+
+        <div class="profile_image">
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/port.jpg" style="height: 100px; width: auto"></a>
+        </div>
+
+
+    </div>
+</div>
+    <br><br><br>
+
 <h2 align="center" style="margin-bottom: 20px"><b>Hospitality Partners</b></h2>
 <br>
 <div class="row">
@@ -580,7 +679,7 @@
 <br>
 <br>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
 
         <div class="profile_image">
 
@@ -590,7 +689,7 @@
         </div>
 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
 
         <div class="profile_image">
             <a href="https://www.cholayil.com/portfolio/medimix-soaps/">
@@ -599,6 +698,7 @@
 
 
     </div>
+
 
 
 </div>
@@ -675,27 +775,47 @@
 <br>
 <br>
 <div class="row">
-    <div class="col-md-6">
-
+    <div class="col-md-4">
         <div class="profile_image">
-
             <br>
             <a href="https://moddelivery.in/order-online/">
                 <img src="http://techfest.org/2019/sponsors/2019/img/Mad_Over_Donuts_Logo.png" style="height: 150px; width: auto"></a>
-
         </div>
 
     </div>
-    <div class="col-md-6">
-
-
-
+    <div class="col-md-4">
         <div class="profile_image">
-
-
             <a href="https://order.faasos.io/">
                 <img src="http://techfest.org/2019/sponsors/2019/img/Faasos.jpg" style="height: 170px; width: auto"></a>
-
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/pepsi.png" style="height: 170px; width: auto; max-width: 100%"></a>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-4">
+        <div class="profile_image">
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/nature.jpg" style="height: 170px; width: auto; max-width: 100%"></a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <br>
+        <div class="profile_image">
+            <br>
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/rio.jpg" style="height: 100px; width: auto"></a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <br>
+        <div class="profile_image">
+            <br>
+            <a href="#">
+                <img src="http://techfest.org/2019/sponsors/2019/img/keventers.jpg" style="height: 100px; width: auto"></a>
         </div>
     </div>
 </div>
@@ -746,9 +866,9 @@
         <br>
 
         <div class="profile_image">
+            <h3>Goodness Partner</h3>
             <a href="https://thelogicalindian.com/">
                 <img src="http://techfest.org/2019/sponsors/2019/img/The%20Logical%20Indian%20-%20Logo.png" style="height: 100px; width: auto"></a>
-
         </div>
     </div>
 </div>

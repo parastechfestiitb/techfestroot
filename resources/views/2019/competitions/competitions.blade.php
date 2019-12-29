@@ -720,7 +720,29 @@
                 <img class="arrow2" src="/2019/Heading.svg" alt="" >
             </div>
         </div>
+
         <div class="row">
+            <div class="col-xs-3 col-md-3" style="z-index: 1" >
+                <div class="recent_blog_item" style="margin-bottom: 0px">
+                    <div class="blog_img shadow">
+                        <img src="/2019/compi/images/codebuzz_new.jpg" style="background-size: cover;width: 100%" alt="">
+                    </div>
+                    <div class="middle">
+                        <div class="text ram2" >Battle out to become the Coding Champion in this three hour contest</div>
+                    </div>
+                    <div class="recent_blog_text">
+                        <div class="recent_blog_text_inner">
+                            <h6><a href="/competitions/codebuzz" style="font-family: Lato;font-weight: bold; color: white!important;">Explore</a></h6>
+                            <a href="/competitions/codebuzz"><h5 style="padding: 0px">GEHC CodeBuzz</h5></a>
+                            <p style="padding: 0px">PRIZE MONEY: INR 50,000/- </p>
+                            <!--                                    <a href="#">Feb 11,ac 2017 <span>/</span></a>-->
+                            <!--                                    <a href="#">No Comments</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{{--            <div class="row">--}}
             <div class="col-xs-3 col-md-3" style="z-index: 1" >
                 <div class="recent_blog_item" style="margin-bottom: 0px">
                     <div class="blog_img shadow">

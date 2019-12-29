@@ -285,7 +285,9 @@
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-8 text-center">
                     <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Resources</h2>
-                    <p class="lead" data-aos="fade-up" data-aos-delay="100">Coming Soon</p>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://drive.google.com/open?id=16joFawzu_d1l4gkKIgIlJ3TWgYhcpgQK">Link</a>
+                    </p>
                 </div>
             </div>
         </div>

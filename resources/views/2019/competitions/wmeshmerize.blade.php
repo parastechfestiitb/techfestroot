@@ -446,7 +446,7 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->wmeshmerize == 0 or empty($user_row->wmeshmerize))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/wmeshmerize/reg" class="btn btn-primary btn-learn" >Register (Wildcard)</a>
+                                    <a href="#" class="btn btn-primary btn-learn " >Registration Closed</a>
                                 @endif
                                 @if($user_row->wmeshmerize == 1 && empty($user_row->wmeshmerize_team))
                                     <div class="dropdown ">
@@ -485,7 +485,7 @@
                                 @endif
                             @endif
                             @if(empty($user_row->email))
-                                <button class="btn btn-primary btn-learn " id="signinButton" >Register (Wildcard)</button>
+                                <button class="btn btn-primary btn-learn " >Registration Closed</button>
                             @endif
                             <div id="snackbar">Sign in to register</div>
                             @if(!empty($user_row))

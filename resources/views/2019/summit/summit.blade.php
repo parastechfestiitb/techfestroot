@@ -334,6 +334,27 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/dilbaugh.jpg);"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Dilbagh  Singh</h3>
+{{--                            <span class="position mb-4">VP,<br> Capgemini</span>--}}
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/atul-tripathi-51438a12/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 {{--            <div class="col-md-6 col-lg-3 ftco-animate">--}}
 {{--                <div class="staff">--}}
 {{--                    <div class="img-wrap d-flex align-items-stretch">--}}
@@ -401,6 +422,27 @@
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url('/2019/summit/images/Saptarshi Headshot.jpg');"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Saptarshi Das</h3>
+                            <span class="position mb-4">Manager - Data Science R&D, <br>Shell</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/atul-tripathi-51438a12/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
                         <div class="img align-self-stretch" style="background-image: url( /2019/summit/images/krunal.jpeg); background-position: center"></div>
                     </div>
                     <div class="text d-flex align-items-center pt-3 text-center">
@@ -423,12 +465,12 @@
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
                     <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url( /2019/summit/images/dilbaugh.jpg); background-position: center"></div>
+                        <div class="img align-self-stretch" style="background-image: url( '/2019/summit/images/Atul Jalan.jpg'); background-position: center"></div>
                     </div>
                     <div class="text d-flex align-items-center pt-3 text-center">
                         <div>
-                            <h3 class="mb-2">Dilbagh Gill</h3>
-                            <span class="position mb-4">CEO and Team Principal<br> Mahindra Racing</span>
+                            <h3 class="mb-2">Atul Jalan</h3>
+                            <span class="position mb-4">Founder - CEO,<br>Manthan</span>
                             <div class="faded">
                                 <ul class="ftco-social text-center">
                                     {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sravanib/"><span class="icon-linkedin"></span></a></li>--}}
@@ -672,7 +714,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>9:00 AM- 9:30 AM</time>Keynote: Sravani Bhattacharjee
+                        <time>9:00 AM- 9:30 AM</time>Keynote: Chetan Murthy
                     </div>
                 </li>
                 <li>
@@ -682,17 +724,17 @@
                 </li>
                 <li>
                     <div>
-                        <time>10:00 AM- 10:30 AM</time>Keynote
+                        <time>10:00 AM- 10:30 AM</time>Keynote: Gaurav Nayyar
                     </div>
                 </li>
                 <li>
                     <div>
-                        <time>10:30 AM- 11:00 AM</time>Keynote
+                        <time>10:30 AM- 11:00 AM</time>Keynote: Raghudeep Mandineni
                     </div>
                 </li>
                 <li>
                     <div>
-                        <time>11:00 AM- 11:30 AM</time>Keynote
+                        <time>11:00 AM- 11:30 AM</time>Keynote: Sagar Joshi
                     </div>
                 </li>
                 <li>
@@ -707,7 +749,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>1:30 PM- 2:00 PM</time>Keynote
+                        <time>1:30 PM- 2:00 PM</time>Keynote: Sanjeev Gupta
                     </div>
                 </li>
                 <li>
@@ -731,7 +773,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>8:30 AM- 9:00 AM</time>Keynote: Chetan Murthy
+                        <time>8:30 AM- 9:00 AM</time>Keynote: Sravani Bhattacharjee
                     </div>
                 </li>
                 <li>
@@ -746,7 +788,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>10:00 AM- 10:30 AM</time>Keynote: Pushpranjan
+                        <time>10:00 AM- 10:30 AM</time>Keynote: Pushpranjan Malajure
                     </div>
                 </li>
                 <li>
@@ -756,7 +798,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>11:00 AM- 11:30 AM</time>Keynote
+                        <time>11:00 AM- 11:30 AM</time>Keynote: Rajiv Joshi
                     </div>
                 </li>
                 <li>
@@ -771,14 +813,14 @@
                 </li>
                 <li>
                     <div>
-                        <time>1:30 PM- 2:00 PM</time>Keynote
+                        <time>1:30 PM- 2:00 PM</time>Keynote: Dilbaugh Gill
                     </div>
                 </li>
-                <li>
-                    <div>
-                        <time>2:00 PM- 5:00 PM</time>Workshop
-                    </div>
-                </li>
+{{--                <li>--}}
+{{--                    <div>--}}
+{{--                        <time>2:00 PM- 5:00 PM</time>Workshop--}}
+{{--                    </div>--}}
+{{--                </li>--}}
 
             </ul>
 
@@ -1280,9 +1322,9 @@
             <div class="col-md   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
                 <img src="/2019/summit/images/sbi.png" alt="" style="width: 100%">
             </div>
-{{--            <div class="col-md ftco-animate" style="margin-top: auto; margin-bottom: auto;">--}}
-{{--                <img src="/2019/summit/mahindra.png" alt="" style="width: 100%">--}}
-{{--            </div>--}}
+            <div class="col-md ftco-animate" style="margin-top: auto; margin-bottom: auto;">
+                <img src="/2019/summit/stepsetgo.png" alt="" style="width: 100%">
+            </div>
         </div>
     </div>
 </section>

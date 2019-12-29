@@ -440,7 +440,9 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->craneomania == 0 or empty($user_row->craneomania))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/craneomania/reg" class="btn btn-primary btn-learn" >Register</a>
+{{--                                    <a href="/competitions/craneomania/reg" class="btn btn-primary btn-learn" >Register</a>--}}
+                                    <a href="#" class="btn btn-primary btn-learn " >Registration Closed</a>
+
                                 @endif
                                 @if($user_row->craneomania == 1 and empty($user_row->craneomania_team))
                                     <div class="dropdown ">
@@ -481,7 +483,7 @@
                                 @endif
                             @endif
                             @if(empty($user_row->email))
-                                <button class="btn btn-primary btn-learn" onclick="myFunction()">Register</button>
+                                <button class="btn btn-primary btn-learn" >Register</button>
                                 <a href="/2019/compi/ps/How to register.pdf" style="color: white">Want to know how to register - Click here</a>
 
                             @endif

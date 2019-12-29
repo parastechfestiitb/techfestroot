@@ -439,7 +439,7 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->wcozmo == 0 or empty($user_row->wcozmo))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/wcozmo/reg" class="btn btn-primary btn-learn " >Register (Wildcard)</a>
+                                    <a href="#" class="btn btn-primary btn-learn " >Registration Closed</a>
                                     <style>
 
                                     </style>
@@ -488,7 +488,7 @@
                                         cursor:not-allowed;
                                     }
                                 </style>
-                                <button class="btn btn-primary btn-learn " id="signinButton">Register (Wildcard)</button>
+                                <button class="btn btn-primary btn-learn ">Registration Closed</button>
                             @endif
 
                             @if(!empty($user_row))

@@ -56,6 +56,7 @@
                     if( $competition == "inspire"){$coeff = "WC-";}
                     if( $competition == "makerthon"){$coeff = "PR-";}
                     if( $competition == "transportation"){$coeff = "UT-";}
+                    if( $competition == "codebuzz"){$coeff = "CB-";}
 
                     $total_reg = count($big_data);
 

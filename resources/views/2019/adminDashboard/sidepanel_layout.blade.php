@@ -56,6 +56,7 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
                         <li><a href="/admindashboard/dronechallenge">dronechallenge</a></li>
                         <li><a href="/admindashboard/inspire">inspire</a></li>
                         <li><a href="/admindashboard/makerthon">makerthon</a></li>
+                        <li><a href="/admindashboard/codebuzz">codebuzz</a></li>
 
                     </ul>
                 </li>
@@ -135,6 +136,8 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
                         <li><a href="/admindashboard/inspire">inspire</a></li>
                         <li><a href="/admindashboard/makerthon">makerthon</a></li>
                         <li><a href="/admindashboard/transportation">transportation</a></li>
+                        <li><a href="/admindashboard/codebuzz">codebuzz</a></li>
+
                     </ul>
                 </li>
 
@@ -199,6 +202,7 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
                             <li><a href="/admindashboard_workshops/MachineLearning2  ">MachineLearning2</a></li>
                             <li><a href="/admindashboard_workshops/WirelessRobotics  ">WirelessRobotics</a></li>
                             <li><a href="/admindashboard_workshops/Blockchain  ">Blockchain</a></li>
+                            <li><a href="/admindashboard_workshops/CapgeminiArtificialIntelligence  ">CapgeminiArtificialIntelligence</a></li>
                         </ul>
                     </li>
 
@@ -206,6 +210,12 @@ $admin = DB::table('admins')->where(['email' => session()->get('user')->email])-
 {{--                @if( $admin->access_mun == "1")--}}
                     <li class="active has-sub">
                         <a class="" href="/admindashboard_payment_mun"><i class="fas fa-tachometer-alt"></i>Mun Payments</a>
+                    </li>
+                <li class="active has-sub">
+                        <a class="" href="/admindashboard_technoholix"><i class="fas fa-tachometer-alt"></i>Techx</a>
+                    </li>
+                <li class="active has-sub">
+                        <a class="" href="/admindashboard_aiflt"><i class="fas fa-tachometer-alt"></i>AIFLT</a>
                     </li>
 {{--                @endif--}}
             </ul>

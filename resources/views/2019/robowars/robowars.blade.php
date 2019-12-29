@@ -1356,13 +1356,17 @@
         <h2 style="opacity: 1; text-align: left;"><b>Our Sponsor</b></h2>
     </div>
     <br>
-    <div class="row">
+    <div class="row" style="">
         <div class="col-md"></div>
 
         <div class="col-md" style="text-align: center;">
             <img src="/2019/robowars/images/Altair_horizontal_sponsor.png" alt="" style="width: 90%; margin: auto;">
-        </div> <div class="col-md" style="text-align: center;">
+        </div>
+        <div class="col-md" style="text-align: center;">
             <img src="/2019/robowars/images/rompot7899.png" alt="" style="width: 90%; margin: auto;">
+        </div>
+        <div class="col-md" style="text-align: center;">
+            <img src="http://techfest.org/2019/sponsors/2019/img/jio.png" alt="" style="width: 90%; margin: auto;">
         </div>
         <div class="col-md"></div>
 

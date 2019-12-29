@@ -270,7 +270,10 @@
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+<?php
+$exhibitions_row = DB::table('exhibitions')->where(['year'=>"2019"])->get();
+$past_exhibitions_row = DB::table('exhibitions')->where(['year'=>null])->get();
+?>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="/" style="font-family: Lato"><img src="/2019/tf_date.png" alt="" style="max-height: 7vh"></a>
@@ -329,43 +332,13 @@
                             <div class="row ftco-animate">
                                 <div class="col-md-12 testimonial">
                                     <div class="carousel-testimony owl-carousel ftco-owl">
-                                        <div class="item">
+                                        @foreach($exhibitions_row as $i)
+                                            <div class="item">
                                             <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/sophia.png" alt="">
+                                                <img src="{{$i->image}}" alt="">
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/bina.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/hangar.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/nao.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/sepios.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/projection.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class=" img">
-                                                <img src="/2019/exhi/highlights_images/puli.png" alt="">
-                                            </div>
-                                        </div>
-
-
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -435,6 +408,33 @@
         <br>
     </div>
 </section>
+
+<section class="ftco-gallery ftco-section ftco-no-pb mb-4" id="gallery-section" style="padding: 3em 0">
+    <div class="arrow1 col-md-4" style="padding: 0% 0% 0% 9%; position: relative; clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);background-color: white;  background-repeat: no-repeat;">
+        <h2 style="opacity: 1; text-align: left;">Current Exhibitions</h2>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-1">    </div>
+        <div class="col-md-10">
+            <div class="row">
+                @foreach($exhibitions_row as $i)
+                    <div class="col-md-4">
+                        <figure class="snip1399">
+                            <h5 class="bottom-left1 bottom-left colors123">{{$i->name}}<br>{{$i->country }}</h5>
+                            <img class="shadow" src="{{$i->image }}" alt="sq-sample20"/>
+                            <figcaption>
+                                <i class="ion-podium"></i>
+                                <h4>{{$i->oneliner }}</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</section>
 <section class="ftco-gallery ftco-section ftco-no-pb mb-4" id="gallery-section" style="padding: 3em 0">
     <div class="arrow1 col-md-4" style="padding: 0% 0% 0% 9%; position: relative; clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);background-color: white;  background-repeat: no-repeat;">
         <h2 style="opacity: 1; text-align: left;">Last Year Lineup</h2>
@@ -443,110 +443,21 @@
         <div class="col-md-1">    </div>
         <div class="col-md-10">
             <div class="row">
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">ANDROID U <br>HIROSHI ISHIGURO LAB</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/androidu.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>One of the most intelligent Android</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left2 bottom-left colors123" style="margin-bottom: -0.5px">FURHAT <br>SWEDEN</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/furhat.png" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Social robot, capable of displaying complex human-like expressions.</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">DANIEL<br>HD ROBOTICS</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/daniel.png" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>A humanoid robot built for research and capable of complex humanoid movements.</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">HACKBERRY<br>MISSION ARM JAPAN</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/hackberry.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>A 3D printable open source Bionic Arm</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left2 bottom-left colors123" style="margin-bottom: -0.5px">B HUMAN <br>GERMANY</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/bhuman.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Six times world champions in RoboCup Standard Platform League</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">MAGNI<br>UBIQUITY ROBOTICS</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/magni.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Robot capable of mobility, 3D SONAR and a 100 kg payload</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">ROBOMASTER<br>NTU SINGAPORE</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/ntu.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Runners-Up at Robomaster Final Tournament</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left2 bottom-left colors123" style="margin-bottom: -0.5px">SKEL-EX <br>NETHERLANDS</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/skelex.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Exoskeleton solution for improved utility and comfort in industrial settings</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="snip1399">
-                        <h5 class="bottom-left1 bottom-left colors123">VALAQ<br>UAV WORKS</h5>
-
-                        <img class="shadow" src="/2019/exhi/lastyear/uav.jpg" alt="sq-sample20"/>
-                        <figcaption>
-                            <i class="ion-podium"></i>
-                            <h4>Advanced Unmanned Aerial Vehicle capable of vertical take-off</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-
+                @foreach($past_exhibitions_row as $i)
+                    <div class="col-md-4">
+                        <figure class="snip1399">
+                            <h5 class="bottom-left1 bottom-left colors123">{{$i->name}}<br>{{$i->country }}</h5>
+                            <img class="shadow" src="{{$i->image }}" alt="sq-sample20"/>
+                            <figcaption>
+                                <i class="ion-podium"></i>
+                                <h4>{{$i->oneliner }}</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                @endforeach
             </div>
-
         </div>
-        <div class="col-md-1">    </div>
+        <div class="col-md-1"></div>
     </div>
 </section>
 

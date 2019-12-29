@@ -231,8 +231,11 @@
 {{--                            <img src="/2019/initiatives/financial_literacy/tflogoblue.jpg" alt="" style="max-height: 60px; margin: auto">--}}
 {{--                            <img src="/2019/initiatives/financial_literacy/iunderstand.png" alt="" style="max-height: 60px; margin: auto">--}}
                             <h1 class="text-white text-uppercase mb-10">All India Financial Literacy Test (AIFLT)</h1>
+                            <a href="https://www.justexam.in/"><img title="Portal Partner" src="/2019/ic/exam.png" alt="" style="max-height: 60px; margin: auto"></a>
+
                             <p class="text-white mb-30" style="font-size:1.1em;">All India Financial Literacy Test brought to you by Techfest 2019-20 and National Institute of Securities Markets, To Register, Click on the button below and fill the registration form</p>
-                            <a href="/initiatives/financial_literacy/register" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Register</span></a>
+{{--                            <a href="/initiatives/financial_literacy/register" target="_blank" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Register</span></a>--}}
+                            <a href="#" class="primary-btn d-inline-flex align-items-center" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Registration Closed</span></a>
                             {{--                            <p class="primary-btn ml-2 d-inline-flex align-items-center" id="signinButton" style="margin-bottom: 10px;overflow: visible"><span class="mr-10">Login/Register</span></p>--}}
                             <h4 class="text-warning mb-10" style="font-weight: bold"></h4>
                         </div>

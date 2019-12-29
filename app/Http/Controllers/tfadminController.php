@@ -151,6 +151,20 @@ class tfadminController extends Controller
         }
         else return "sign in to ca portal first";
     }
+    public function adminDashboard_aiflt(){
+        if(session()->has('user')) {
+            $current_user = session()->get('user');
+            $admin = DB::table('admins')->where('email', '=', $current_user->email)->first();// row ko array bana ke return ki;
+            if(!empty($admin)) {
+                if ($admin->email == $current_user->email) {
+                    $big_data = DB::table('tf_finlit')->get()->unique('email');
+                    return view('2019.adminDashboard.adminDashboard_aiflt')->with(['big_data' => $big_data, 'admin' => $current_user]);
+                }
+            }
+            else return "you are not admin";
+        }
+        else return "sign in to ca portal first";
+    }
     public function adminDashboard_summit(){
         if(session()->has('user')) {
             $current_user = session()->get('user');
@@ -173,6 +187,20 @@ class tfadminController extends Controller
                 if ($admin->email == $current_user->email) {
                     $big_data = DB::table('tf_exhibitions')->get();
                     return view('2019.adminDashboard.admin_exhibitions')->with(['big_data' => $big_data, 'admin' => $current_user]);
+                }
+            }
+            else return "you are not admin";
+        }
+        else return "sign in to ca portal first";
+    }
+    public function adminDashboard_technoholix(){
+        if(session()->has('user')) {
+            $current_user = session()->get('user');
+            $admin = DB::table('admins')->where('email', '=', $current_user->email)->first();// row ko array bana ke return ki;
+            if(!empty($admin)) {
+                if ($admin->email == $current_user->email) {
+                    $big_data = DB::table('tf_techx')->get();
+                    return view('2019.adminDashboard.adminDashboard_technoholix')->with(['big_data' => $big_data, 'admin' => $current_user]);
                 }
             }
             else return "you are not admin";

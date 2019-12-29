@@ -311,6 +311,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(2019/summit/images/deepit-min.jpg);"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Deepit Purkayastha</h3>
+                            <span class="position mb-4">Co-Founder<br> Inshorts</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/chetankrishnamurthy/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
                     <div class="img-wrap d-flex align-items-stretch">
@@ -366,6 +389,49 @@
                             <div class="faded">
                                 <ul class="ftco-social text-center">
                                     {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/aviksarkar/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/Govindraj.JPEG);"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Govindraj Ethiraj</h3>
+                            <span class="position mb-4">Founder,<br> Ping Digital Broadcast</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/chetankrishnamurthy/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/Naresh.jpg);"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Naresh Gupta</h3>
+                            <span class="position mb-4">Managing Partner,<br> Bang in the Middle</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/chetankrishnamurthy/"><span class="icon-linkedin"></span></a></li>--}}
                                     {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
                                     {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
                                     {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
@@ -1109,7 +1175,7 @@
                                                 <h5>INR 100/-</h5>
                                                 <p class="card-text">
                                                 <li>Must carry a valid ID Card</li>
-                                                <li>VIP entry to Exhibitions on 3rd day</li>
+{{--                                                <li>VIP entry to Exhibitions on 3rd day</li>--}}
                                                 <li>Panel Discussion</li>
                                                 <li>Networking Session</li>
 {{--                                                <li>Lunch on both days</li>--}}
@@ -1265,7 +1331,8 @@
                         <img src="/2019/summit/adobe.jpg" alt="" style="width: 47%; max-height: 200px">
                     </div>
                     <div class="col-xs-6 col-md-3   ftco-animate" style="margin: auto">
-                        <img src="/2019/summit/thelogical.png" alt="" style="width: 100%; margin: auto">
+                        <h3>Goodness Partner</h3>
+                        <img src="/2019/summit/thelogical.png" alt="" style="width: 100%; margin: auto;background-color: white">
                     </div>
                     <div class="col-xs-6 col-md-4   ftco-animate">
                         <img src="/2019/summit/images/sbi.png" alt="" style="width: 100%">
@@ -1278,6 +1345,9 @@
                     </div>
                     <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
                         <img src="/2019/summit/red.jpg" alt="" style="width: 80%; ">
+                    </div>
+                    <div class="col-xs-6 col-md-4   ftco-animate" style="margin-top: auto; margin-bottom: auto;">
+                        <img src="http://techfest.org/2019/sponsors/2019/img/screen.png" alt="" style="width: 80%; ">
                     </div>
 
                 </div>

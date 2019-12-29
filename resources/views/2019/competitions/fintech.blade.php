@@ -450,7 +450,9 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->fintech == 0 or empty($user_row->fintech))
                                     {{--                                        if he is not registered--}}
-                                    <a href="/competitions/fintech/reg" class="btn btn-primary btn-learn" >Register</a>
+{{--                                    <a href="/competitions/fintech/reg" class="btn btn-primary btn-learn" >Register</a>--}}
+                                    <a href="#" class="btn btn-primary btn-learn " >Registration Closed</a>
+
                                 @endif
                                 @if($user_row->fintech == 1 and empty($user_row->fintech_team))
                                     <div class="dropdown ">

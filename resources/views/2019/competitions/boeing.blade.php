@@ -392,6 +392,7 @@
 {{--                <li ><a onclick="myFunction1()">Task</a></li>--}}
                 <li ><a onclick="myFunction2()">FaQs</a></li>
                 <li ><a onclick="myFunction3()">Rules</a></li>
+                <li ><a href="/2019/compi/Boeing Top 90  - Sheet1.pdf">Results</a></li>
                 <li ><a onclick="myFunction5()">Abstract Submission</a></li>
                 <li ><a onclick="myFunction4()">Contact Us</a></li>
 
