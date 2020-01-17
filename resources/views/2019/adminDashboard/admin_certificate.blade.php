@@ -34,6 +34,7 @@
                                         <th class="th-sm">Certificate</th>
                                         <th class="th-sm">Certificate Url</th>
                                         <th class="th-sm">Inserted by</th>
+                                        <th class="th-sm">Downloaded</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -50,6 +51,7 @@
                                             <td class="th-sm">{{$Certificate_row->name}}</td>
                                             <td class="th-sm"><a target="_blank" href="http://techfest.org/2019/certificate/{{$i->id}}/{{$url}}">http://techfest.org/2019/certificate/{{$i->id}}/{{$url}}</a></td>
                                             <td class="th-sm">{{$i->admin}}</td>
+                                            <td class="th-sm">{{$i->name_update}}</td>
 
                                         </tr>
                                     @endforeach

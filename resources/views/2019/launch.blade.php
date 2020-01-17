@@ -399,7 +399,7 @@
     <div class="box topright">
         <div class="row" >
             <div class="col-md-2 topright_links" style="padding-right: 2.5%;padding-left: 8.4%;">
-                <a class="links" href="/innovationchallenge" title="Innovation Challenge">IC</a><br>
+                <a class="links" href="/schedule" title="Schedule 2020">Schedule</a><br>
 
             </div>
             <div class="col-md-4 topright_links" id="Links" style="padding-right: 4px;">

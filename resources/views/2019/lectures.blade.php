@@ -182,6 +182,8 @@
                         </div>
                         <h1 class="mb-4">lecture Series</h1>
                         <p>Glean wisdom from some of the most brilliant personalities of our time!</p>
+                        <p style="font-weight: bold"> NO Registrations are required to attend any Lecture. Everyone is welcome to attend.
+                           <br> NOTE: The entry is strictly on a first come first serve basis.</p>
                     </div>
                 </div>
             </div>
@@ -214,6 +216,8 @@
                     <p style="text-align: justify; color: white;">Always a crowd favourite, the Techfest Lecture Series is one of the gems of the festival. Year after year, Techfest puts together a stellar lineup of speakers from diverse walks of life, speaking on pressing world issues: a commentary on history, as it unfolds. An annual constant since our initiation in 1998, the series has inspired millions of minds till date.
                         Listen to and interact with eminent personalities from diverse fields, glean insights from their profound wisdom and bear witness to their sheer mental prowess right here, at Techfest, IIT Bombay.
                         Come, join the next generation of thinkers, innovators and leaders from 3rd to 5th January at the Techfest Lecture Series.</p>
+                    <p style="font-weight: bold"> NO Registrations are required to attend any Lecture. Everyone is welcome to attend.
+                        <br> NOTE: The entry is strictly on a first come first serve basis.</p>
                 </div>
             </div>
         </div>

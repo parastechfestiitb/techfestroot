@@ -402,6 +402,27 @@
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/hemant.JPG);"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Hemant Jain</h3>
+                            <span class="position mb-4">Head of Digital Business,<br> Lokmat</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/chetankrishnamurthy/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
                         <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/Govindraj.JPEG);"></div>
                     </div>
                     <div class="text d-flex align-items-center pt-3 text-center">

@@ -699,7 +699,7 @@
                             @if(!empty($user_row->email))
                                 @if($user_row->codebuzz == 0 or empty($user_row->codebuzz))
                                     {{--                                        if he is not registered--}}
-                                                                        <a href="/competitions/codebuzz/reg" class="btn btn-primary btn-learn" >Register</a>
+                                                                        <a href="#" class="btn btn-primary btn-learn" >Registration Closed</a>
 {{--                                    <a href="#" class="btn btn-primary btn-learn" >Registration Closed</a>--}}
                                 @endif
 
@@ -707,7 +707,7 @@
 
                             @endif
                             @if(empty($user_row->email))
-                                <button class="btn btn-primary btn-learn" id="signinButton" >Register</button>
+                                <button class="btn btn-primary btn-learn" id="#" >Registration Closed</button>
                             @endif
                             @if(!empty($user_row))
                                 @if($user_row->codebuzz > 0 )

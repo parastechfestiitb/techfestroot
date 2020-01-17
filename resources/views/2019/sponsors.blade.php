@@ -851,7 +851,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <h5 align="center"><b>Online Reach Partner</b></h5>
         <div class="profile_image">
             <br>
@@ -861,14 +861,32 @@
         </div>
 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <br>
         <br>
-
+        <div class="profile_image">
+            <h3>Media Partner</h3>
+            <a href="https://thelogicalindian.com/">
+                <img src="http://techfest.org/2019/media/images/logo/freepress.jpeg" style="height: 100px; width: auto"></a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <br>
+        <br>
         <div class="profile_image">
             <h3>Goodness Partner</h3>
             <a href="https://thelogicalindian.com/">
                 <img src="http://techfest.org/2019/sponsors/2019/img/The%20Logical%20Indian%20-%20Logo.png" style="height: 100px; width: auto"></a>
+        </div>
+    </div>
+    <br><div class="col-md-4"></div>
+        <div class="col-md-4">
+        <br>
+        <br>
+        <div class="profile_image">
+            <h3>Media Partner</h3>
+            <a href="https://thelogicalindian.com/">
+                <img src="http://techfest.org/2019/sponsors/2019/img/bs.jpg" style="height: 100px; width: auto"></a>
         </div>
     </div>
 </div>

@@ -20,7 +20,7 @@ Route::domain('www.techfest.org')->group(function(){
 |
 */
 Route::redirect('/app', 'http://beta.techfest.org');
-Route::redirect('/m/segreta', 'http://techfest.org//segreta');
+Route::redirect('/m/segreta', 'http://techfest.org/segreta');
 Route::redirect('/Segreta', 'http://techfest.org//segreta');
 
 Route::get('/app2', function () {return view('2019.app.app');});
@@ -130,6 +130,7 @@ Route::prefix('/admin')->name('admin.')->group(function () {
 
 Route::get('/', function () {    return view('2019.launch');});
 Route::redirect('tf','/');
+Route::redirect('schedule','/2019/Schedule.pdf');
 
 Route::get('/ca','CaController@indexPost');
 Route::post('/ca','CaController@indexPost');
@@ -150,6 +151,7 @@ Route::get('/adminca','CaController@caevents');
 Route::post('/adminca','CaController@adminca');
 
 Route::get('/mail','CaController@mail');
+
 
 //Route::get('/penaltymail/','CaController@imageverify');
 Route::get('/penaltymail/{email}','CaController@imageverify');
@@ -211,6 +213,8 @@ Route::get('/admindashboard_certificate', 'tfadminController@adminDashboard_cert
 Route::get('/admindashboard_certificate/insert', 'tfadminController@adminDashboard_certificate_insert_get');
 Route::post('/admindashboard_certificate/insert', 'CertificateController_2019@insert');
 Route::get('2019/certificate/{id}/{key}', 'CertificateController_2019@certificate_get');
+Route::get('2019/certificate/{id}/{key}/download', 'CertificateController_2019@certificateDownload');
+Route::post('2019/certificate/name_update', 'CertificateController_2019@nameUpdate');
 
 Route::get('/payment_fix', function () {return view('2019.adminDashboard.payment_fix')->with(['id' =>0]);});
 //Route::get('/payment_fix', 'tfadminController@payment_fix');
@@ -999,5 +1003,9 @@ Route::redirect('/lookback-18', '/lookback');
 //    Route::get('/{event}/{eventName}', 'MainController@Get')->name('eventEventName');
 //    Route::get('/{event}/{eventName}/{id}', 'MainController@Get')->name('eventEventNameId');
 //});
+//
+Route::get('/robowars/update', function () {return view('2019.robowars.update');});
 
+Route::get('/robowars/upname', function () {return view('2019.robowars.upname');});
 
+Route::get('/robowars/vs', function () {return view('2019.robowars.vs');});

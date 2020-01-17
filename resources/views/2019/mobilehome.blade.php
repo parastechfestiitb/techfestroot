@@ -210,6 +210,7 @@
                 <li class="Workshops" id="Workshops" ><a href="/workshops">Workshops</a></li>
                 <li class="Competition" id="Competition"><a href="/competitions/">Competition</a></li>
                 <li class="Ideate" id="Ideate"><a href="/innovationchallenge">Innovation Challenge</a></li>
+                <li class="Ideate" id="Ideate"><a href="/schedule">Schedule</a></li>
                 <li class="Esports" id="Esports"><a href="/esports/">Esports</a></li>
                 <li class="ift" id="ift"><a href="/ift/">Full Throttle</a></li>
                 <li class="Robowars" id="Robowars" ><a href="/robowars19">Robowars</a></li>

@@ -341,8 +341,8 @@
                     </div>
                     <div class="text d-flex align-items-center pt-3 text-center">
                         <div>
-                            <h3 class="mb-2">Dilbagh  Singh</h3>
-{{--                            <span class="position mb-4">VP,<br> Capgemini</span>--}}
+                            <h3 class="mb-2">Dilbagh Gill</h3>
+                            <span class="position mb-4">CEO and Team Principal,<br> Mahindra Racing </span>
                             <div class="faded">
                                 <ul class="ftco-social text-center">
                                     {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/atul-tripathi-51438a12/"><span class="icon-linkedin"></span></a></li>--}}
@@ -406,7 +406,7 @@
                     <div class="text d-flex align-items-center pt-3 text-center">
                         <div>
                             <h3 class="mb-2">Atul Tripathi</h3>
-                            <span class="position mb-4">Chief Data Scientist,<br> Tech Mahindra</span>
+                            <span class="position mb-4">Data Scientist,<br> IISER, Mohali</span>
                             <div class="faded">
                                 <ul class="ftco-social text-center">
                                     {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/atul-tripathi-51438a12/"><span class="icon-linkedin"></span></a></li>--}}
@@ -505,7 +505,91 @@
                 </div>
             </div>
 
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/jayanta.jpg); background-position: center"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Jayanta Banerjee </h3>
+                            <span class="position mb-4">Group CIO,<br>TATA Steel</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sravanib/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/Rajiv.jpg); background-position: center"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Rajiv Joshi </h3>
+                            <span class="position mb-4">IEEE Fellow<br>CAS Board of Governer</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sravanib/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/Utpal_Chakraborty_AI_Speaker_Photo-min.jpg); background-position: center"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Utpal Chakraborty </h3>
+                            <span class="position mb-4">Head of AI<br>Yes Bank</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sravanib/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(/2019/summit/images/rajesh.jpg); background-position: center"></div>
+                    </div>
+                    <div class="text d-flex align-items-center pt-3 text-center">
+                        <div>
+                            <h3 class="mb-2">Rajesh Sharma </h3>
+                            <span class="position mb-4">Senior Manager<br>Jio</span>
+                            <div class="faded">
+                                <ul class="ftco-social text-center">
+                                    {{--                                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sravanib/"><span class="icon-linkedin"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--}}
+                                    {{--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
@@ -729,7 +813,7 @@
                 </li>
                 <li>
                     <div>
-                        <time>10:30 AM- 11:00 AM</time>Keynote: Raghudeep Mandineni
+                        <time>10:30 AM- 11:00 AM</time>Keynote: Raghudeep Madineni
                     </div>
                 </li>
                 <li>
@@ -813,7 +897,27 @@
                 </li>
                 <li>
                     <div>
-                        <time>1:30 PM- 2:00 PM</time>Keynote: Dilbaugh Gill
+                        <time>1:30 PM- 2:00 PM</time>Keynote: Dilbagh Gill
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2:00 PM- 2:30 PM</time> Jayanta Banerjee
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2:30 PM- 3:00 PM</time> Atul Jatan
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>3:00 PM- 3:30 PM</time> Step Set Go
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>3:30 PM- 4:00 PM</time> Krunal, Sneha, Swesha
                     </div>
                 </li>
 {{--                <li>--}}

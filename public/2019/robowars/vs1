@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Supermercado+One&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #container {
+            background-image: url("bg1.png");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table {
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+            position: relative;
+        }
+        td {
+            height: 100%;
+            width: 33%;
+            color : #fff;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .heading {
+            color: #B12534;
+            font-family: 'Fredoka One';
+            font-size: 41px;
+        }
+        #bn1, #bn2, #tn1, #tn2, #bn3, #tn3 {
+            color: #fff;
+            font-family: 'Supermercado One';
+            font-size: 32px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <table><tr>
+        <td>
+            <span class="heading">BOT NAME</span>
+            <br><span id='bn1'>Jubilau</span>
+            <br><br><span class="heading">TEAM NAME</span>
+            <br><span id='tn1'>Uarrior</span>
+        </td>
+        <td>
+            <span class="heading">BOT NAME</font></span>
+            <br><span id='bn2'>Venus</span>
+            <br><br><span class="heading">TEAM NAME</font></span>
+            <br><span id='tn2'>Team VisionBotz</span>
+        </td>
+        <td>
+            <span class="heading">BOT NAME</span>
+            <br><span id='bn3'>Swaraj</span>
+            <br><br><span class="heading">TEAM NAME</span>
+            <br><span id='tn3'>Team Invincibles</span>
+        </td>
+    </tr></table>
+</div>
+<button onclick="fullScreen();">Fullscreen Mode</button>
+
+</body>
+</html>
