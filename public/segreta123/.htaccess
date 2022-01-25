@@ -1,4 +1,0 @@
-<Location "./*">
-    Order Allow,Deny
-    Deny from all
-</Location>
